@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'DPLibrary_Example' do
+  pod 'DPLibrary', :path => '../'
+
+  target 'DPLibrary_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

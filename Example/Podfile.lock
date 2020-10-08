@@ -1,0 +1,16 @@
+PODS:
+  - DPLibrary (0.1.0)
+
+DEPENDENCIES:
+  - DPLibrary (from `../`)
+
+EXTERNAL SOURCES:
+  DPLibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DPLibrary: efb8fc40eec79aadfd089c015d01308409475a16
+
+PODFILE CHECKSUM: 1e170356996f8e6d1c03d7e4716cc4382eea62c2
+
+COCOAPODS: 1.8.4
