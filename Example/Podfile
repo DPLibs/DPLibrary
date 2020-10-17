@@ -5,7 +5,8 @@ target 'DPLibrary_Example' do
 
   target 'DPLibrary_Tests' do
     inherit! :search_paths
-
+    
+    pod 'KeychainSwift', '~> 19.0'
     
   end
 end
