@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DPLibrary'
-  s.version          = '1.0.0'
+  s.version          = '1.1.0'
   s.summary          = 'DP library'
   s.description      = 'A set of useful utilities'
   s.homepage         = 'https://github.com/DPLibs/DPLibrary'
@@ -10,4 +10,5 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = '11.0'
   s.source_files = 'DPLibrary/**/*'
   s.swift_version = '4.2'
+  s.dependency 'KeychainSwift', '~> 19.0'
 end
