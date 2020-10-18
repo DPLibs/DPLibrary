@@ -7,6 +7,7 @@ target 'DPLibrary_Example' do
     inherit! :search_paths
     
     pod 'KeychainSwift', '~> 19.0'
+    pod 'Kingfisher', '~> 5.15.6'
     
   end
 end
