@@ -1,6 +1,6 @@
 import Foundation
 
-struct ServerConfiguration {
+public struct ServerConfiguration {
     let restUrl: String
     let socketUrl: String
     let target: String
