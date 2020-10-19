@@ -97,6 +97,7 @@
 		E0E5D9D0749D1E915B811054205DEB34 /* Pods-DPLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F93BA6CB860B1C17BFFC20DC509A5ED /* Pods-DPLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E19251DD5890F0EBBF745850DF14A14B /* UIApplication+CreateScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12B1376DE13C8892DC43273E8D9F6B /* UIApplication+CreateScreenshot.swift */; };
 		E1EE3094E379EB102EDC4F9EE4A24513 /* UIImageView+SetImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612803A42F66E9A987B6DE13F16928E /* UIImageView+SetImageFromUrl.swift */; };
+		E256E06D253E048D00C4867E /* FileManager+FileMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E256E06C253E048D00C4867E /* FileManager+FileMethods.swift */; };
 		E2B375F5253D91A500C6D13C /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */; };
 		E2D3DFDC253D992700DDA610 /* StyleWrapper+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCB253D992700DDA610 /* StyleWrapper+UISearchBar.swift */; };
 		E2D3DFDD253D992700DDA610 /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCC253D992700DDA610 /* StyleWrapper+UIView.swift */; };
@@ -305,6 +306,7 @@
 		D9407408D61217B66E2E994D92CAB5BB /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
 		DF423B2592758DF0D8C209A7B45472F2 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
 		E229747460993A5FC643F2BA8D6017E2 /* Pods_DPLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E256E06C253E048D00C4867E /* FileManager+FileMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "FileManager+FileMethods.swift"; path = "DPLibrary/FileManager+FileMethods.swift"; sourceTree = "<group>"; };
 		E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppServerConfiguration.swift; path = DPLibrary/AppServerConfiguration.swift; sourceTree = "<group>"; };
 		E2D3DFCB253D992700DDA610 /* StyleWrapper+UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISearchBar.swift"; sourceTree = "<group>"; };
 		E2D3DFCC253D992700DDA610 /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
@@ -418,6 +420,7 @@
 		358DBDD2EFE3F571E660A5DECEC7CA3D /* DPLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				E256E06C253E048D00C4867E /* FileManager+FileMethods.swift */,
 				9E94E3C09DFA748DBAE486E2E04F5274 /* Angle.swift */,
 				E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */,
 				A894F91DFADFD0E2D88BB44379317B7D /* AppVersion.swift */,
@@ -1034,6 +1037,7 @@
 				399CEF8F1345564DCA45B3806FB6DDB5 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift in Sources */,
 				765BB01A46EAF05669E286D2E3025659 /* UIView+ToImage.swift in Sources */,
 				E2D3DFE3253D992700DDA610 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */,
+				E256E06D253E048D00C4867E /* FileManager+FileMethods.swift in Sources */,
 				E2D3DFDE253D992700DDA610 /* StyleWrapper+UITabBar.swift in Sources */,
 				E2D3DFEB253D992700DDA610 /* StyleWrapper+UITableCell.swift in Sources */,
 				F163610C0DBFA7245D80772ECFE6B6E8 /* UIViewController+Height.swift in Sources */,
