@@ -97,7 +97,6 @@
 		E0E5D9D0749D1E915B811054205DEB34 /* Pods-DPLibrary_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7F93BA6CB860B1C17BFFC20DC509A5ED /* Pods-DPLibrary_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E19251DD5890F0EBBF745850DF14A14B /* UIApplication+CreateScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12B1376DE13C8892DC43273E8D9F6B /* UIApplication+CreateScreenshot.swift */; };
 		E1EE3094E379EB102EDC4F9EE4A24513 /* UIImageView+SetImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612803A42F66E9A987B6DE13F16928E /* UIImageView+SetImageFromUrl.swift */; };
-		E2B374D8253D82DA00C6D13C /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B374D7253D82DA00C6D13C /* AppServerConfiguration.swift */; };
 		E2B37568253D854D00C6D13C /* StyleWrapper+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B37557253D854D00C6D13C /* StyleWrapper+UISearchBar.swift */; };
 		E2B37569253D854D00C6D13C /* StyleWrapper+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B37558253D854D00C6D13C /* StyleWrapper+UIActivityIndicatorView.swift */; };
 		E2B3756A253D854D00C6D13C /* StyleWrapper+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B37559253D854D00C6D13C /* StyleWrapper+UITabBar.swift */; };
@@ -115,6 +114,7 @@
 		E2B37576253D854D00C6D13C /* StyleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B37565253D854D00C6D13C /* StyleWrapper.swift */; };
 		E2B37577253D854D00C6D13C /* StyleWrapper+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B37566253D854D00C6D13C /* StyleWrapper+UIStackView.swift */; };
 		E2B37578253D854D00C6D13C /* StyleWrapper+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B37567253D854D00C6D13C /* StyleWrapper+UIScrollView.swift */; };
+		E2B375F5253D91A500C6D13C /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */; };
 		E2EB6227687C49BC2A474C127FED37B0 /* DPLoggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBA09EA22EFCDAEEC91BD2F0CE4E241 /* DPLoggable.swift */; };
 		E6678244A71CD9D0A4D7344A165C2162 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF423B2592758DF0D8C209A7B45472F2 /* MemoryStorage.swift */; };
 		E79B6F4F0803467E351053D1B8675C6F /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1BB59DB133EC59CEDE389A3097578 /* Encodable+Dictionary.swift */; };
@@ -305,7 +305,6 @@
 		D9407408D61217B66E2E994D92CAB5BB /* ImageDataProvider.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDataProvider.swift; path = Sources/General/ImageSource/ImageDataProvider.swift; sourceTree = "<group>"; };
 		DF423B2592758DF0D8C209A7B45472F2 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
 		E229747460993A5FC643F2BA8D6017E2 /* Pods_DPLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		E2B374D7253D82DA00C6D13C /* AppServerConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppServerConfiguration.swift; sourceTree = "<group>"; };
 		E2B37557253D854D00C6D13C /* StyleWrapper+UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISearchBar.swift"; sourceTree = "<group>"; };
 		E2B37558253D854D00C6D13C /* StyleWrapper+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
 		E2B37559253D854D00C6D13C /* StyleWrapper+UITabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITabBar.swift"; sourceTree = "<group>"; };
@@ -323,6 +322,7 @@
 		E2B37565253D854D00C6D13C /* StyleWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleWrapper.swift; sourceTree = "<group>"; };
 		E2B37566253D854D00C6D13C /* StyleWrapper+UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIStackView.swift"; sourceTree = "<group>"; };
 		E2B37567253D854D00C6D13C /* StyleWrapper+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIScrollView.swift"; sourceTree = "<group>"; };
+		E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppServerConfiguration.swift; path = DPLibrary/AppServerConfiguration.swift; sourceTree = "<group>"; };
 		E3441CE5985EF5E626C0196F12A162F8 /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
 		E907D0D3A8ACC59E1BD08B2B213130E1 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
 		EC17BCE11701175291498C47E1439B72 /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
@@ -418,8 +418,8 @@
 		358DBDD2EFE3F571E660A5DECEC7CA3D /* DPLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */,
 				9E94E3C09DFA748DBAE486E2E04F5274 /* Angle.swift */,
-				E2B374D7253D82DA00C6D13C /* AppServerConfiguration.swift */,
 				A894F91DFADFD0E2D88BB44379317B7D /* AppVersion.swift */,
 				9EBA09EA22EFCDAEEC91BD2F0CE4E241 /* DPLoggable.swift */,
 				786D59F0CB9C6C864D53435C28FB8F98 /* DPStoredParameter.swift */,
@@ -1013,6 +1013,7 @@
 				2D748AF4E619461EEBCA87B576C3A81E /* DPLibrary-dummy.m in Sources */,
 				E2B3756D253D854D00C6D13C /* StyleWrapper+UITableView.swift in Sources */,
 				E2EB6227687C49BC2A474C127FED37B0 /* DPLoggable.swift in Sources */,
+				E2B375F5253D91A500C6D13C /* AppServerConfiguration.swift in Sources */,
 				CA47B52C3BF902DBD3ADC3E69F7981D2 /* DPStoredParameter.swift in Sources */,
 				E2B37572253D854D00C6D13C /* StyleWrapper+UISwitch.swift in Sources */,
 				E79B6F4F0803467E351053D1B8675C6F /* Encodable+Dictionary.swift in Sources */,
@@ -1039,7 +1040,6 @@
 				E2B3756E253D854D00C6D13C /* StyleWrapper+UITableCell.swift in Sources */,
 				992F0B809924851852B5759EEBB44700 /* UIViewController+Keyboard.swift in Sources */,
 				E2B37570253D854D00C6D13C /* StyleWrapper+UITextField.swift in Sources */,
-				E2B374D8253D82DA00C6D13C /* AppServerConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
