@@ -98,23 +98,23 @@
 		E19251DD5890F0EBBF745850DF14A14B /* UIApplication+CreateScreenshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD12B1376DE13C8892DC43273E8D9F6B /* UIApplication+CreateScreenshot.swift */; };
 		E1EE3094E379EB102EDC4F9EE4A24513 /* UIImageView+SetImageFromUrl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5612803A42F66E9A987B6DE13F16928E /* UIImageView+SetImageFromUrl.swift */; };
 		E2B375F5253D91A500C6D13C /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */; };
-		E2D3DF73253D93B800DDA610 /* StyleWrapper+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF62253D93B800DDA610 /* StyleWrapper+UISearchBar.swift */; };
-		E2D3DF74253D93B800DDA610 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF63253D93B800DDA610 /* StyleWrapper+UIActivityIndicatorView.swift */; };
-		E2D3DF75253D93B800DDA610 /* StyleWrapper+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF64253D93B800DDA610 /* StyleWrapper+UITabBar.swift */; };
-		E2D3DF76253D93B800DDA610 /* StyleWrapper+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF65253D93B800DDA610 /* StyleWrapper+UICollectionView.swift */; };
-		E2D3DF77253D93B800DDA610 /* StyleWrapper+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF66253D93B800DDA610 /* StyleWrapper+UILabel.swift */; };
-		E2D3DF78253D93B800DDA610 /* StyleWrapper+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF67253D93B800DDA610 /* StyleWrapper+UITableView.swift */; };
-		E2D3DF79253D93B800DDA610 /* StyleWrapper+UITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF68253D93B800DDA610 /* StyleWrapper+UITableCell.swift */; };
-		E2D3DF7A253D93B800DDA610 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF69253D93B800DDA610 /* Stylable.swift */; };
-		E2D3DF7B253D93B800DDA610 /* StyleWrapper+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF6A253D93B800DDA610 /* StyleWrapper+UITextField.swift */; };
-		E2D3DF7C253D93B800DDA610 /* StyleWrapper+UIButton+Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF6B253D93B800DDA610 /* StyleWrapper+UIButton+Props.swift */; };
-		E2D3DF7D253D93B800DDA610 /* StyleWrapper+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF6C253D93B800DDA610 /* StyleWrapper+UISwitch.swift */; };
-		E2D3DF7E253D93B800DDA610 /* StyleWrapper+UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF6D253D93B800DDA610 /* StyleWrapper+UINavigationBar.swift */; };
-		E2D3DF7F253D93B800DDA610 /* StyleWrapper+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF6E253D93B800DDA610 /* StyleWrapper+UIImageView.swift */; };
-		E2D3DF80253D93B800DDA610 /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF6F253D93B800DDA610 /* StyleWrapper+UIView.swift */; };
-		E2D3DF81253D93B800DDA610 /* StyleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF70253D93B800DDA610 /* StyleWrapper.swift */; };
-		E2D3DF82253D93B800DDA610 /* StyleWrapper+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF71253D93B800DDA610 /* StyleWrapper+UIStackView.swift */; };
-		E2D3DF83253D93B800DDA610 /* StyleWrapper+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DF72253D93B800DDA610 /* StyleWrapper+UIScrollView.swift */; };
+		E2D3DFDC253D992700DDA610 /* StyleWrapper+UISearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCB253D992700DDA610 /* StyleWrapper+UISearchBar.swift */; };
+		E2D3DFDD253D992700DDA610 /* StyleWrapper+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCC253D992700DDA610 /* StyleWrapper+UIView.swift */; };
+		E2D3DFDE253D992700DDA610 /* StyleWrapper+UITabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCD253D992700DDA610 /* StyleWrapper+UITabBar.swift */; };
+		E2D3DFDF253D992700DDA610 /* Stylable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCE253D992700DDA610 /* Stylable.swift */; };
+		E2D3DFE0253D992700DDA610 /* StyleWrapper+UIStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFCF253D992700DDA610 /* StyleWrapper+UIStackView.swift */; };
+		E2D3DFE1253D992700DDA610 /* StyleWrapper+UINavigationBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD0253D992700DDA610 /* StyleWrapper+UINavigationBar.swift */; };
+		E2D3DFE2253D992700DDA610 /* StyleWrapper+UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD1253D992700DDA610 /* StyleWrapper+UIImageView.swift */; };
+		E2D3DFE3253D992700DDA610 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD2253D992700DDA610 /* StyleWrapper+UIActivityIndicatorView.swift */; };
+		E2D3DFE4253D992700DDA610 /* StyleWrapper+UIScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD3253D992700DDA610 /* StyleWrapper+UIScrollView.swift */; };
+		E2D3DFE5253D992700DDA610 /* StyleWrapper+UIButton+Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD4253D992700DDA610 /* StyleWrapper+UIButton+Props.swift */; };
+		E2D3DFE6253D992700DDA610 /* StyleWrapper+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD5253D992700DDA610 /* StyleWrapper+UITextField.swift */; };
+		E2D3DFE7253D992700DDA610 /* StyleWrapper+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD6253D992700DDA610 /* StyleWrapper+UITableView.swift */; };
+		E2D3DFE8253D992700DDA610 /* StyleWrapper+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD7253D992700DDA610 /* StyleWrapper+UICollectionView.swift */; };
+		E2D3DFE9253D992700DDA610 /* StyleWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD8253D992700DDA610 /* StyleWrapper.swift */; };
+		E2D3DFEA253D992700DDA610 /* StyleWrapper+UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFD9253D992700DDA610 /* StyleWrapper+UILabel.swift */; };
+		E2D3DFEB253D992700DDA610 /* StyleWrapper+UITableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFDA253D992700DDA610 /* StyleWrapper+UITableCell.swift */; };
+		E2D3DFEC253D992700DDA610 /* StyleWrapper+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D3DFDB253D992700DDA610 /* StyleWrapper+UISwitch.swift */; };
 		E2EB6227687C49BC2A474C127FED37B0 /* DPLoggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EBA09EA22EFCDAEEC91BD2F0CE4E241 /* DPLoggable.swift */; };
 		E6678244A71CD9D0A4D7344A165C2162 /* MemoryStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF423B2592758DF0D8C209A7B45472F2 /* MemoryStorage.swift */; };
 		E79B6F4F0803467E351053D1B8675C6F /* Encodable+Dictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E1BB59DB133EC59CEDE389A3097578 /* Encodable+Dictionary.swift */; };
@@ -306,23 +306,23 @@
 		DF423B2592758DF0D8C209A7B45472F2 /* MemoryStorage.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MemoryStorage.swift; path = Sources/Cache/MemoryStorage.swift; sourceTree = "<group>"; };
 		E229747460993A5FC643F2BA8D6017E2 /* Pods_DPLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B375F4253D91A500C6D13C /* AppServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AppServerConfiguration.swift; path = DPLibrary/AppServerConfiguration.swift; sourceTree = "<group>"; };
-		E2D3DF62253D93B800DDA610 /* StyleWrapper+UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISearchBar.swift"; sourceTree = "<group>"; };
-		E2D3DF63253D93B800DDA610 /* StyleWrapper+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
-		E2D3DF64253D93B800DDA610 /* StyleWrapper+UITabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITabBar.swift"; sourceTree = "<group>"; };
-		E2D3DF65253D93B800DDA610 /* StyleWrapper+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UICollectionView.swift"; sourceTree = "<group>"; };
-		E2D3DF66253D93B800DDA610 /* StyleWrapper+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UILabel.swift"; sourceTree = "<group>"; };
-		E2D3DF67253D93B800DDA610 /* StyleWrapper+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITableView.swift"; sourceTree = "<group>"; };
-		E2D3DF68253D93B800DDA610 /* StyleWrapper+UITableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITableCell.swift"; sourceTree = "<group>"; };
-		E2D3DF69253D93B800DDA610 /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
-		E2D3DF6A253D93B800DDA610 /* StyleWrapper+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITextField.swift"; sourceTree = "<group>"; };
-		E2D3DF6B253D93B800DDA610 /* StyleWrapper+UIButton+Props.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIButton+Props.swift"; sourceTree = "<group>"; };
-		E2D3DF6C253D93B800DDA610 /* StyleWrapper+UISwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISwitch.swift"; sourceTree = "<group>"; };
-		E2D3DF6D253D93B800DDA610 /* StyleWrapper+UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UINavigationBar.swift"; sourceTree = "<group>"; };
-		E2D3DF6E253D93B800DDA610 /* StyleWrapper+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIImageView.swift"; sourceTree = "<group>"; };
-		E2D3DF6F253D93B800DDA610 /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
-		E2D3DF70253D93B800DDA610 /* StyleWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleWrapper.swift; sourceTree = "<group>"; };
-		E2D3DF71253D93B800DDA610 /* StyleWrapper+UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIStackView.swift"; sourceTree = "<group>"; };
-		E2D3DF72253D93B800DDA610 /* StyleWrapper+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIScrollView.swift"; sourceTree = "<group>"; };
+		E2D3DFCB253D992700DDA610 /* StyleWrapper+UISearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISearchBar.swift"; sourceTree = "<group>"; };
+		E2D3DFCC253D992700DDA610 /* StyleWrapper+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIView.swift"; sourceTree = "<group>"; };
+		E2D3DFCD253D992700DDA610 /* StyleWrapper+UITabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITabBar.swift"; sourceTree = "<group>"; };
+		E2D3DFCE253D992700DDA610 /* Stylable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylable.swift; sourceTree = "<group>"; };
+		E2D3DFCF253D992700DDA610 /* StyleWrapper+UIStackView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIStackView.swift"; sourceTree = "<group>"; };
+		E2D3DFD0253D992700DDA610 /* StyleWrapper+UINavigationBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UINavigationBar.swift"; sourceTree = "<group>"; };
+		E2D3DFD1253D992700DDA610 /* StyleWrapper+UIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIImageView.swift"; sourceTree = "<group>"; };
+		E2D3DFD2253D992700DDA610 /* StyleWrapper+UIActivityIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIActivityIndicatorView.swift"; sourceTree = "<group>"; };
+		E2D3DFD3253D992700DDA610 /* StyleWrapper+UIScrollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIScrollView.swift"; sourceTree = "<group>"; };
+		E2D3DFD4253D992700DDA610 /* StyleWrapper+UIButton+Props.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UIButton+Props.swift"; sourceTree = "<group>"; };
+		E2D3DFD5253D992700DDA610 /* StyleWrapper+UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITextField.swift"; sourceTree = "<group>"; };
+		E2D3DFD6253D992700DDA610 /* StyleWrapper+UITableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITableView.swift"; sourceTree = "<group>"; };
+		E2D3DFD7253D992700DDA610 /* StyleWrapper+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UICollectionView.swift"; sourceTree = "<group>"; };
+		E2D3DFD8253D992700DDA610 /* StyleWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleWrapper.swift; sourceTree = "<group>"; };
+		E2D3DFD9253D992700DDA610 /* StyleWrapper+UILabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UILabel.swift"; sourceTree = "<group>"; };
+		E2D3DFDA253D992700DDA610 /* StyleWrapper+UITableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UITableCell.swift"; sourceTree = "<group>"; };
+		E2D3DFDB253D992700DDA610 /* StyleWrapper+UISwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISwitch.swift"; sourceTree = "<group>"; };
 		E3441CE5985EF5E626C0196F12A162F8 /* ImageDrawing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageDrawing.swift; path = Sources/Image/ImageDrawing.swift; sourceTree = "<group>"; };
 		E907D0D3A8ACC59E1BD08B2B213130E1 /* Box.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Box.swift; path = Sources/Utility/Box.swift; sourceTree = "<group>"; };
 		EC17BCE11701175291498C47E1439B72 /* Source.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Source.swift; path = Sources/General/ImageSource/Source.swift; sourceTree = "<group>"; };
@@ -428,7 +428,7 @@
 				E74F6B5356A7576BF21913EC1B7221BA /* NumberAdduction */,
 				2F0855FCBAE709819372F3783E55EA09 /* PlayState.swift */,
 				74D0115E105A8C51275025927B2A4719 /* Pod */,
-				E2D3DF61253D93B800DDA610 /* StyleWrapper */,
+				E2D3DFCA253D992700DDA610 /* StyleWrapper */,
 				F3DFB124D5C9E9AAAE73C6C5D9D10947 /* Support Files */,
 			);
 			name = DPLibrary;
@@ -636,26 +636,26 @@
 			);
 			sourceTree = "<group>";
 		};
-		E2D3DF61253D93B800DDA610 /* StyleWrapper */ = {
+		E2D3DFCA253D992700DDA610 /* StyleWrapper */ = {
 			isa = PBXGroup;
 			children = (
-				E2D3DF69253D93B800DDA610 /* Stylable.swift */,
-				E2D3DF70253D93B800DDA610 /* StyleWrapper.swift */,
-				E2D3DF63253D93B800DDA610 /* StyleWrapper+UIActivityIndicatorView.swift */,
-				E2D3DF6B253D93B800DDA610 /* StyleWrapper+UIButton+Props.swift */,
-				E2D3DF65253D93B800DDA610 /* StyleWrapper+UICollectionView.swift */,
-				E2D3DF6E253D93B800DDA610 /* StyleWrapper+UIImageView.swift */,
-				E2D3DF66253D93B800DDA610 /* StyleWrapper+UILabel.swift */,
-				E2D3DF6D253D93B800DDA610 /* StyleWrapper+UINavigationBar.swift */,
-				E2D3DF72253D93B800DDA610 /* StyleWrapper+UIScrollView.swift */,
-				E2D3DF62253D93B800DDA610 /* StyleWrapper+UISearchBar.swift */,
-				E2D3DF71253D93B800DDA610 /* StyleWrapper+UIStackView.swift */,
-				E2D3DF6C253D93B800DDA610 /* StyleWrapper+UISwitch.swift */,
-				E2D3DF64253D93B800DDA610 /* StyleWrapper+UITabBar.swift */,
-				E2D3DF68253D93B800DDA610 /* StyleWrapper+UITableCell.swift */,
-				E2D3DF67253D93B800DDA610 /* StyleWrapper+UITableView.swift */,
-				E2D3DF6A253D93B800DDA610 /* StyleWrapper+UITextField.swift */,
-				E2D3DF6F253D93B800DDA610 /* StyleWrapper+UIView.swift */,
+				E2D3DFCE253D992700DDA610 /* Stylable.swift */,
+				E2D3DFD8253D992700DDA610 /* StyleWrapper.swift */,
+				E2D3DFD2253D992700DDA610 /* StyleWrapper+UIActivityIndicatorView.swift */,
+				E2D3DFD4253D992700DDA610 /* StyleWrapper+UIButton+Props.swift */,
+				E2D3DFD7253D992700DDA610 /* StyleWrapper+UICollectionView.swift */,
+				E2D3DFD1253D992700DDA610 /* StyleWrapper+UIImageView.swift */,
+				E2D3DFD9253D992700DDA610 /* StyleWrapper+UILabel.swift */,
+				E2D3DFD0253D992700DDA610 /* StyleWrapper+UINavigationBar.swift */,
+				E2D3DFD3253D992700DDA610 /* StyleWrapper+UIScrollView.swift */,
+				E2D3DFCB253D992700DDA610 /* StyleWrapper+UISearchBar.swift */,
+				E2D3DFCF253D992700DDA610 /* StyleWrapper+UIStackView.swift */,
+				E2D3DFDB253D992700DDA610 /* StyleWrapper+UISwitch.swift */,
+				E2D3DFCD253D992700DDA610 /* StyleWrapper+UITabBar.swift */,
+				E2D3DFDA253D992700DDA610 /* StyleWrapper+UITableCell.swift */,
+				E2D3DFD6253D992700DDA610 /* StyleWrapper+UITableView.swift */,
+				E2D3DFD5253D992700DDA610 /* StyleWrapper+UITextField.swift */,
+				E2D3DFCC253D992700DDA610 /* StyleWrapper+UIView.swift */,
 			);
 			name = StyleWrapper;
 			path = DPLibrary/StyleWrapper;
@@ -995,52 +995,52 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E2D3DF83253D93B800DDA610 /* StyleWrapper+UIScrollView.swift in Sources */,
 				9ABC165779D9D303AE583871D457DC58 /* Angle.swift in Sources */,
+				E2D3DFDC253D992700DDA610 /* StyleWrapper+UISearchBar.swift in Sources */,
+				E2D3DFE9253D992700DDA610 /* StyleWrapper.swift in Sources */,
 				B1A623D78507BDE191FF6DAA23606828 /* AppVersion.swift in Sources */,
+				E2D3DFEA253D992700DDA610 /* StyleWrapper+UILabel.swift in Sources */,
+				E2D3DFDF253D992700DDA610 /* Stylable.swift in Sources */,
 				007C3E469366CBCDE0D390A3843E1119 /* Array+AppendUnique.swift in Sources */,
-				E2D3DF7E253D93B800DDA610 /* StyleWrapper+UINavigationBar.swift in Sources */,
 				8445D1A13A749BD529E0115A3F60A9C3 /* Array+RemoveAll.swift in Sources */,
-				E2D3DF74253D93B800DDA610 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */,
 				CED452F72A07F68095DC8C042AAA3DEC /* Array+RemoveDuplicate.swift in Sources */,
-				E2D3DF81253D93B800DDA610 /* StyleWrapper.swift in Sources */,
-				E2D3DF75253D93B800DDA610 /* StyleWrapper+UITabBar.swift in Sources */,
 				2A5B7A2A489919E8632CA7B777CC52BB /* Collection+ElementAtIndex.swift in Sources */,
 				A30DB53A2B28534B3C261A04B79569CD /* Date+Componets.swift in Sources */,
-				E2D3DF82253D93B800DDA610 /* StyleWrapper+UIStackView.swift in Sources */,
-				E2D3DF7C253D93B800DDA610 /* StyleWrapper+UIButton+Props.swift in Sources */,
-				E2D3DF7A253D93B800DDA610 /* Stylable.swift in Sources */,
-				E2D3DF76253D93B800DDA610 /* StyleWrapper+UICollectionView.swift in Sources */,
+				E2D3DFE5253D992700DDA610 /* StyleWrapper+UIButton+Props.swift in Sources */,
+				E2D3DFE0253D992700DDA610 /* StyleWrapper+UIStackView.swift in Sources */,
 				2D748AF4E619461EEBCA87B576C3A81E /* DPLibrary-dummy.m in Sources */,
-				E2D3DF78253D93B800DDA610 /* StyleWrapper+UITableView.swift in Sources */,
 				E2EB6227687C49BC2A474C127FED37B0 /* DPLoggable.swift in Sources */,
 				E2B375F5253D91A500C6D13C /* AppServerConfiguration.swift in Sources */,
-				E2D3DF7D253D93B800DDA610 /* StyleWrapper+UISwitch.swift in Sources */,
+				E2D3DFDD253D992700DDA610 /* StyleWrapper+UIView.swift in Sources */,
 				CA47B52C3BF902DBD3ADC3E69F7981D2 /* DPStoredParameter.swift in Sources */,
-				E2D3DF80253D93B800DDA610 /* StyleWrapper+UIView.swift in Sources */,
+				E2D3DFE1253D992700DDA610 /* StyleWrapper+UINavigationBar.swift in Sources */,
 				E79B6F4F0803467E351053D1B8675C6F /* Encodable+Dictionary.swift in Sources */,
 				9CC6EAA81623129BEADBE90AD74C96AE /* Environment.swift in Sources */,
-				E2D3DF7F253D93B800DDA610 /* StyleWrapper+UIImageView.swift in Sources */,
-				E2D3DF77253D93B800DDA610 /* StyleWrapper+UILabel.swift in Sources */,
 				D2322623BA1AF2E88806B2DD4072CC7C /* NSMutableAttributedString+Create.swift in Sources */,
 				F3A9A15CC84F8B347C2AA46ECB0A7012 /* NumberAdduction.swift in Sources */,
+				E2D3DFE6253D992700DDA610 /* StyleWrapper+UITextField.swift in Sources */,
 				19E21FA75DCEBD32E3D734C47B0A4E40 /* NumberAdductionOptional.swift in Sources */,
-				E2D3DF73253D93B800DDA610 /* StyleWrapper+UISearchBar.swift in Sources */,
 				63F8A0F380F4632C4A48E7E5A2D2E4F5 /* PlayState.swift in Sources */,
 				9B78B9387E2834751262CE3E8455687D /* String+Capitalize.swift in Sources */,
 				E19251DD5890F0EBBF745850DF14A14B /* UIApplication+CreateScreenshot.swift in Sources */,
 				78637182FA4C5FF331997DEFD32E8204 /* UIApplication+TopViewController.swift in Sources */,
 				B3BDC5CF45DA09A1D0CDCB06F904CB63 /* UIImage+Rounded.swift in Sources */,
 				E1EE3094E379EB102EDC4F9EE4A24513 /* UIImageView+SetImageFromUrl.swift in Sources */,
+				E2D3DFEC253D992700DDA610 /* StyleWrapper+UISwitch.swift in Sources */,
 				DC160312F60CF048C764C265CB8E168B /* UILabel+AdjustsFontSizeToFitWidth.swift in Sources */,
 				A8DC54528E5C1535AA40451D80A868E1 /* UIStackView+AddArrangedSubviews.swift in Sources */,
 				4AA4603A7711741948571424EF6D790F /* UITableView+RegisterCellNibs.swift in Sources */,
+				E2D3DFE8253D992700DDA610 /* StyleWrapper+UICollectionView.swift in Sources */,
 				399CEF8F1345564DCA45B3806FB6DDB5 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift in Sources */,
 				765BB01A46EAF05669E286D2E3025659 /* UIView+ToImage.swift in Sources */,
-				E2D3DF79253D93B800DDA610 /* StyleWrapper+UITableCell.swift in Sources */,
+				E2D3DFE3253D992700DDA610 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */,
+				E2D3DFDE253D992700DDA610 /* StyleWrapper+UITabBar.swift in Sources */,
+				E2D3DFEB253D992700DDA610 /* StyleWrapper+UITableCell.swift in Sources */,
 				F163610C0DBFA7245D80772ECFE6B6E8 /* UIViewController+Height.swift in Sources */,
-				E2D3DF7B253D93B800DDA610 /* StyleWrapper+UITextField.swift in Sources */,
+				E2D3DFE4253D992700DDA610 /* StyleWrapper+UIScrollView.swift in Sources */,
+				E2D3DFE2253D992700DDA610 /* StyleWrapper+UIImageView.swift in Sources */,
 				992F0B809924851852B5759EEBB44700 /* UIViewController+Keyboard.swift in Sources */,
+				E2D3DFE7253D992700DDA610 /* StyleWrapper+UITableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
