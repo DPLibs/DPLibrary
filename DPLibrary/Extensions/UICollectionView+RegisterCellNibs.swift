@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension UICollectionView {
+public extension UICollectionView {
     
     func registerCellNibs(_ cellClasses: [AnyClass]) {
         cellClasses.forEach({ cellClass in

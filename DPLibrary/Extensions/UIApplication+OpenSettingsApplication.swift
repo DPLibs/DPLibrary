@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-extension UIApplication {
+public extension UIApplication {
     
     func openSettingsApplication() -> Bool {
         guard let url = URL(string: UIApplication.openSettingsURLString), self.canOpenURL(url) else { return false }
