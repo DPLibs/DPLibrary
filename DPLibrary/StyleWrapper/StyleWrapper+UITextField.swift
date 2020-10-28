@@ -27,4 +27,10 @@ public extension StyleWrapper where Element: UITextField {
         }
     }
     
+    static func placeholder(_ text: String?) -> StyleWrapper {
+        return .wrap { textField in
+            textField.placeholder = text
+        }
+    }
+    
 }

@@ -21,6 +21,12 @@ public extension StyleWrapper where Element: UILabel {
         }
     }
     
+    static func textColor(_ color: UIColor?) -> StyleWrapper {
+        return .wrap { label in
+            label.textColor = color
+        }
+    }
+    
     static func lineBreakMode(_ value: NSLineBreakMode) -> StyleWrapper {
         return .wrap { label in
             label.lineBreakMode = value

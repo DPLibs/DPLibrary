@@ -51,11 +51,6 @@ public extension StyleWrapper where Element: UIView {
         }
     }
     
-}
-
-// MARK: - CornerRadius
-extension StyleWrapper where Element: UIView {
-    
     static func cornerRadius(_ value: CGFloat) -> StyleWrapper {
         return .wrap { view in
             view.layer.cornerRadius = value
@@ -90,9 +85,15 @@ extension StyleWrapper where Element: UIView {
         }
     }
     
-    static var circle: StyleWrapper {
+    static var cornerRadiusCircle: StyleWrapper {
         return .wrap { view in
             view.layer.cornerRadius = view.frame.height / 2
+        }
+    }
+    
+    static func maskedCorners(_ value: CACornerMask) -> StyleWrapper {
+        return .wrap { view in
+            view.layer.maskedCorners = value
         }
     }
     
