@@ -7,7 +7,7 @@ public extension Stylable {
     
     static func style(style: @escaping Style<Self>) -> Style<Self> { return style }
     
-    private func apply(_ style: StyleWrapper<Self>) {
+    func apply(_ style: StyleWrapper<Self>) {
         switch style {
         case let .wrap(style):
             style(self)
