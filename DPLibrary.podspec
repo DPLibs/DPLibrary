@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/DPLibs/DPLibrary.git', :tag => s.version.to_s }
   s.ios.deployment_target = '11.0'
   s.source_files = 'DPLibrary/**/*'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
   
   s.dependency 'KeychainSwift', '~> 19.0'
   s.dependency 'Kingfisher', '~> 5.15.6'
