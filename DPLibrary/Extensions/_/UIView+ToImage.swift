@@ -19,4 +19,8 @@ public extension UIView {
         self.toImage(size: self.bounds.size)
     }
     
+    func getAbsoluteCoordinateToWindow() -> CGRect? {
+        self.superview?.convert(self.frame, to: nil)
+    }
+    
 }

@@ -44,4 +44,28 @@ public extension UILabel {
         self.text = text
     }
     
+    func isTruncated(forNumberOfLines value: Int) -> Bool {
+        self.calculateMaxLines() > value
+//        self.calculateNumberOfLinesAll()
+    }
+    
+    #warning("remove or not remove")
+    func calculateNumberOfLinesAll() -> Int {
+        guard let myText = self.text as NSString?, let font = self.font else { return 0 }
+        let rect = CGSize(width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude)
+        let labelSize = myText.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        return Int(ceil(CGFloat(labelSize.height) / self.font.lineHeight))
+    }
+    
+    func calculateMaxLines() -> Int {
+        let maxSize = CGSize(width: frame.size.width, height: CGFloat(Float.infinity))
+        let charSize = font.lineHeight
+        let text = (self.text ?? "") as NSString
+        guard let textFont = font else { return 0 }
+        let textSize = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [.font: textFont], context: nil)
+        let lines = Int(textSize.height / charSize)
+        
+        return lines
+    }
+    
 }
