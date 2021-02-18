@@ -13,9 +13,6 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let date = Date()
-//        date.toLocalString(withFormatType: .init(<#T##dateFormat: String##String#>))
     }
 
 }
