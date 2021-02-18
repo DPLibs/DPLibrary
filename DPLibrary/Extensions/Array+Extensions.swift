@@ -25,7 +25,6 @@ public extension Array {
     }
 
     /// Remove all elemants at indices.
-    /// - Returns: -
     ///
     mutating func removeAll(at indices: [Int]) {
         self = self.removingAll(at: indices)
@@ -53,7 +52,6 @@ public extension Array where Element: Equatable {
     
     /// Adds a newElement at the end of the array if there isn't one already.
     /// - Parameter newElement: The element to append to the array.
-    /// - Returns: -
     ///
     mutating func appendUnique(_ newElement: Element) {
         self = self.appendingUnique(newElement)
@@ -74,7 +72,6 @@ public extension Array where Element: Equatable {
     
     /// Adds the elements of a sequence to the end of the array. if there isn't one already.
     /// - Parameter newElements: The elements to append to the array.
-    /// - Returns: -
     ///
     mutating func appendUnique(contentsOf newElements: [Element]) {
         self = self.appendingUnique(contentsOf: newElements)
@@ -108,7 +105,6 @@ public extension Array where Element: Equatable {
     /// - Parameter newElement: The element to append to the array.
     /// - Parameter keepingCount: The stored length of the array.
     /// - Parameter makeElementsUnique: Remove duplicates in the array.
-    /// - Returns: -
     ///
     mutating func push(_ newElement: Element, keepingCount: Int, makeElementsUnique : Bool) {
         self = self.pushing(newElement, keepingCount: keepingCount, makeElementsUnique: makeElementsUnique)
@@ -130,7 +126,6 @@ public extension Array where Element: Equatable {
     }
 
     /// Remove all not unique elements.
-    /// - Returns: -
     ///
     mutating func removeDuplicates() {
         self = self.removingDuplicates()

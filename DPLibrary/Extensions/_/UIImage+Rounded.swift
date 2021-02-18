@@ -8,6 +8,7 @@ public extension UIImage {
         UIGraphicsBeginImageContextWithOptions(self.size, false, 1)
         UIBezierPath(roundedRect: rect, cornerRadius: value).addClip()
         self.draw(in: rect)
+        
         return UIGraphicsGetImageFromCurrentImageContext()
     }
     

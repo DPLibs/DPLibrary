@@ -15,6 +15,7 @@ public extension UITapGestureRecognizer {
         textContainer.lineFragmentPadding = 0.0
         textContainer.lineBreakMode = label.lineBreakMode
         textContainer.maximumNumberOfLines = label.numberOfLines
+        
         let labelSize = label.bounds.size
         textContainer.size = labelSize
         
@@ -33,6 +34,7 @@ public extension UITapGestureRecognizer {
         
         var indexOfCharacter = layoutManager.characterIndex(for: locationOfTouchInTextContainer, in: textContainer, fractionOfDistanceBetweenInsertionPoints: nil)
         indexOfCharacter += 4
+        
         return NSLocationInRange(indexOfCharacter, targetRange)
     }
     
