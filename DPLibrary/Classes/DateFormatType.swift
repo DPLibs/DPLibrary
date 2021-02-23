@@ -9,8 +9,7 @@ public struct DateFormatType {
     public let dateFormat: String
     
     /// Variable dateFormat for use in DateFromatter. Example: *dd.MM.yyyy*
-    ///
-    /// - Parameter dateFormat - Variable dateFormat for use in DateFromatter. Example: *dd.MM.yyyy*
+    /// - Parameter dateFormat - Variable dateFormat for use in DateFromatter. Example: *dd.MM.yyyy*.
     ///
     public init(_ dateFormat: String) {
         self.dateFormat = dateFormat
@@ -20,35 +19,35 @@ public struct DateFormatType {
 // MARK: - DateFormatType + Constants
 public extension DateFormatType {
     
-    /// Constant DateFormatType("dd.MM.yyyy").
+    /// Constant DateFormatType("dd.MM.yyyy"). Example: 01.01.2020.
     ///
     ///     let date = Date()
     ///     print(date.toLocalString(withFormat: .default)) // 01.01.2020
     ///
     static let `default` = DateFormatType("dd.MM.yyyy")
     
-    /// Constant DateFormatType("dd MMMM yyyy").
+    /// Constant DateFormatType("dd MMMM yyyy"). Example: 01 января 2020.
     ///
     ///     let date = Date()
     ///     print(date.toLocalString(withFormat: .dateWithMonthWords)) // 01 января 2020
     ///
     static let dateWithMonthWords = DateFormatType("dd MMMM yyyy")
     
-    /// Constant DateFormatType("LLLL").
+    /// Constant DateFormatType("LLLL"). Example: 01 января 2020.
     ///
     ///     let date = Date()
     ///     print(date.toLocalString(withFormat: .monthFullWords)) // январь
     ///
     static let monthFullWords = DateFormatType("LLLL")
     
-    /// Constant DateFormatType("LLLL yyyy").
+    /// Constant DateFormatType("LLLL yyyy"). Example: январь 2020.
     ///
     ///     let date = Date()
     ///     print(date.toLocalString(withFormat: .monthFullWordsWithYear)) // январь 2020
     ///
     static let monthFullWordsWithYear = DateFormatType("LLLL yyyy")
     
-    /// Constant DateFormatType("eee").
+    /// Constant DateFormatType("eee"). Example: пн.
     ///
     ///     let date = Date()
     ///     print(date.toLocalString(withFormat: .weekDayWordsShort)) // пн
