@@ -125,6 +125,7 @@
 		E2BCCCA525E5840200AC4822 /* StyleWrapper+UISwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC9425E5840200AC4822 /* StyleWrapper+UISwitch.swift */; };
 		E2BF543425DDC377009B300A /* NotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */; };
 		E2BF548525DF04F8009B300A /* DateFormatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF548425DF04F8009B300A /* DateFormatType.swift */; };
+		E2CFFC3225E82BB400B0FDB9 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */; };
 		E8C2D4AA6B59D4ED06382EC5EC60CAC4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BD98D135702232DDA77960AECFAAB /* Source.swift */; };
 		E9DD64D06854D3AFAFB25B2DA57F5263 /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8BD0A40B38E59803465833CB71925 /* ImageDownloaderDelegate.swift */; };
 		EC60820674D7530E79FA1E2A83A160B1 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E596C54203DF0A3B2F46D482E13127C4 /* Collection+Extensions.swift */; };
@@ -346,6 +347,7 @@
 		E2BCCC9425E5840200AC4822 /* StyleWrapper+UISwitch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "StyleWrapper+UISwitch.swift"; sourceTree = "<group>"; };
 		E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extensions.swift"; sourceTree = "<group>"; };
 		E2BF548425DF04F8009B300A /* DateFormatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatType.swift; sourceTree = "<group>"; };
+		E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
 		E4183FE55AA297139CA4B9BB1928C6DE /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/General/Kingfisher.swift; sourceTree = "<group>"; };
 		E596C54203DF0A3B2F46D482E13127C4 /* Collection+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		E7915C1D84ED3B213377B2BF12F27735 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Utility/Result.swift; sourceTree = "<group>"; };
@@ -606,6 +608,7 @@
 			children = (
 				E2BCCC5025E5835600AC4822 /* _not_formatted */,
 				4D8AF9661438B2CE8BEDF282F2B736DE /* Classes */,
+				E2CFFC3025E82BB400B0FDB9 /* Enums */,
 				466537D4B86B7CDDCE817A9F0ECD6F7C /* Extensions */,
 				58B68A236612C3F581F2EA1B9CF8232B /* Pod */,
 				CE8D78E4B612239EF0476570CA4CE9A9 /* Support Files */,
@@ -625,7 +628,6 @@
 				E2BCCC5625E5835600AC4822 /* FileManager+FileMethods.swift */,
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
 				E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */,
-				E2BCCC5B25E5835600AC4822 /* PlayState.swift */,
 				E2BCCC5E25E5835600AC4822 /* UILabel+AdjustsFontSizeToFitWidth.swift */,
 				E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift */,
 				E2BCCC5C25E5835600AC4822 /* UIViewController+Keyboard.swift */,
@@ -668,6 +670,16 @@
 				E2BCCC9425E5840200AC4822 /* StyleWrapper+UISwitch.swift */,
 			);
 			path = StyleWrapper;
+			sourceTree = "<group>";
+		};
+		E2CFFC3025E82BB400B0FDB9 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				E2BCCC5B25E5835600AC4822 /* PlayState.swift */,
+				E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */,
+			);
+			name = Enums;
+			path = DPLibrary/Enums;
 			sourceTree = "<group>";
 		};
 		EF9A15252C3B4340E1794C3111EB68B9 /* Core */ = {
@@ -983,6 +995,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2CFFC3225E82BB400B0FDB9 /* WeekDay.swift in Sources */,
 				E2BCCCA425E5840200AC4822 /* StyleWrapper+UITableCell.swift in Sources */,
 				E2BCCC7225E5835600AC4822 /* UILabel+AdjustsFontSizeToFitWidth.swift in Sources */,
 				E2BCCC7325E5835600AC4822 /* ImageModel.swift in Sources */,

@@ -42,6 +42,13 @@ public extension Date {
     
     // MARK: - Get methods
     
+    /// Return week of year number.
+    /// - Returns: Week of year number.
+    ///
+    func getWeekOfYear() -> Int {
+        Calendar.current.component(.weekOfYear, from: self)
+    }
+    
     /// Return age from birthday date.
     /// - Returns: Age value.
     ///
@@ -65,20 +72,41 @@ public extension Date {
     }
     
     /// Returns all dates of the days of the current week.
-    /// - Parameter startFromDayNumber: Starting day of the week, default - 1 (monday).
+    /// - Parameter firstWeekday: Starting day of the week. Default: *monday*.
     /// - Returns: Dates of the days of the current week .
     ///
-    func getWeekDates(startFromDayNumber: Int = 1) -> [Date] {
-        let calendar = Calendar.current
-        let startOfDay = calendar.startOfDay(for: self)
-        let dayOfWeekNumber = calendar.component(.weekday, from: startOfDay)
-        
-        guard let weekdaysRange = calendar.range(of: .weekday, in: .weekOfYear, for: startOfDay) else { return [] }
-        
-        let dates = (weekdaysRange.lowerBound ..< weekdaysRange.upperBound)
-            .compactMap { calendar.date(byAdding: .day, value: $0 - dayOfWeekNumber + startFromDayNumber, to: startOfDay) }
-        
-        return dates
+    func getWeekDates(firstWeekday: WeekDay = .monday) -> [Date] {
+        var calendar = Calendar.current
+        calendar.firstWeekday = firstWeekday.rawValue
+    
+        let today = calendar.startOfDay(for: self)
+        guard let weekInterval = calendar.dateInterval(of: .weekOfYear, for: today) else { return [] }
+    
+        var week: [Date] = []
+        for i in 0...6 {
+            guard let day = calendar.date(byAdding: .day, value: i, to: weekInterval.start) else { continue }
+            week += [day]
+        }
+    
+        return week
+    }
+    
+    /// Returns all dates of the days of the current week with dates of many weeks next.
+    /// - Parameter weeksCount: Count of weeks next.
+    /// - Parameter firstWeekday: Starting day of the week. Default: *monday*.
+    /// - Returns: Dates of the days of the current week .
+    ///
+    func getWeekDates(withManyWeeksNext weeksCount: Int, firstWeekday: WeekDay = .monday) -> [Date] {
+        var result: [Date] = []
+        let current = self
+    
+        for index in 0...weeksCount {
+            guard let date = current.addingComponent(.day, value: index * 7) else { continue }
+            result += date.getWeekDates(firstWeekday: firstWeekday)
+        }
+    
+        result.sort()
+        return result
     }
     
     /// Returns all dates of the days of the current month.
@@ -98,12 +126,21 @@ public extension Date {
     
     // MARK: - Compare methods
     
-    /// Returns true if self is equal to date wti granularity to day.
-    /// - Parameter date: date for comparison.
-    /// - Returns: comparison result.
+    /// Returns true if self is equal to date with granularity to day.
+    /// - Parameter date: Date for comparison.
+    /// - Returns: Comparison result.
     ///
     func isEqualToDateToGranularityDay(_ date: Date) -> Bool {
         Calendar.current.compare(self, to: date, toGranularity: .day) == .orderedSame
     }
     
+    /// Returns true if self is less to date with granularity to day.
+    /// - Parameter date: Date for comparison.
+    /// - Returns: Comparison result.
+    ///
+    func isLessDateToGranularityDay(_ date: Date) -> Bool {
+        Calendar.current.compare(self, to: date, toGranularity: .day) == .orderedAscending
+    }
+    
 }
+
