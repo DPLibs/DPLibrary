@@ -92,12 +92,12 @@
 		E2BCCC6825E5835600AC4822 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5325E5835600AC4822 /* Distance.swift */; };
 		E2BCCC6925E5835600AC4822 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift */; };
 		E2BCCC6A25E5835600AC4822 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5525E5835600AC4822 /* Environment.swift */; };
-		E2BCCC6B25E5835600AC4822 /* FileManager+FileMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5625E5835600AC4822 /* FileManager+FileMethods.swift */; };
+		E2BCCC6B25E5835600AC4822 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5625E5835600AC4822 /* FileManager+Extensions.swift */; };
 		E2BCCC6C25E5835600AC4822 /* IntRawValueOptionalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */; };
 		E2BCCC6D25E5835600AC4822 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5825E5835600AC4822 /* Time.swift */; };
 		E2BCCC6E25E5835600AC4822 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5925E5835600AC4822 /* Angle.swift */; };
 		E2BCCC6F25E5835600AC4822 /* PlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5B25E5835600AC4822 /* PlayState.swift */; };
-		E2BCCC7025E5835600AC4822 /* UIViewController+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5C25E5835600AC4822 /* UIViewController+Keyboard.swift */; };
+		E2BCCC7025E5835600AC4822 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5C25E5835600AC4822 /* UIViewController+Extensions.swift */; };
 		E2BCCC7125E5835600AC4822 /* TimeUnit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */; };
 		E2BCCC7225E5835600AC4822 /* UILabel+AdjustsFontSizeToFitWidth.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5E25E5835600AC4822 /* UILabel+AdjustsFontSizeToFitWidth.swift */; };
 		E2BCCC7325E5835600AC4822 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5F25E5835600AC4822 /* ImageModel.swift */; };
@@ -314,12 +314,12 @@
 		E2BCCC5325E5835600AC4822 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 		E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+DidTapAttributedTextInLabel.swift"; sourceTree = "<group>"; };
 		E2BCCC5525E5835600AC4822 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
-		E2BCCC5625E5835600AC4822 /* FileManager+FileMethods.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+FileMethods.swift"; sourceTree = "<group>"; };
+		E2BCCC5625E5835600AC4822 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
 		E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntRawValueOptionalable.swift; sourceTree = "<group>"; };
 		E2BCCC5825E5835600AC4822 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		E2BCCC5925E5835600AC4822 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		E2BCCC5B25E5835600AC4822 /* PlayState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
-		E2BCCC5C25E5835600AC4822 /* UIViewController+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Keyboard.swift"; sourceTree = "<group>"; };
+		E2BCCC5C25E5835600AC4822 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
 		E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeUnit.swift; sourceTree = "<group>"; };
 		E2BCCC5E25E5835600AC4822 /* UILabel+AdjustsFontSizeToFitWidth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UILabel+AdjustsFontSizeToFitWidth.swift"; sourceTree = "<group>"; };
 		E2BCCC5F25E5835600AC4822 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageModel.swift; sourceTree = "<group>"; };
@@ -486,6 +486,7 @@
 				E596C54203DF0A3B2F46D482E13127C4 /* Collection+Extensions.swift */,
 				C427FACAB81ECDE010C089CC732B4666 /* Date+Extensions.swift */,
 				8216C8A5162FCA9AD8178DFAF59611B1 /* Encodable+Extensions.swift */,
+				E2BCCC5625E5835600AC4822 /* FileManager+Extensions.swift */,
 				E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */,
 				09255F904254B9745FEDF2F23915AF5E /* NSMutableAttributedString+Extensions.swift */,
 				D49C54490C33F1E515861B1DC39ADB16 /* String+Extensions.swift */,
@@ -497,6 +498,7 @@
 				5729D9BDB82FD4609263A3AEA901A3C2 /* UIStackView+Extensions.swift */,
 				D81DCDA6BB00F00DC60EBBF89EEC9EC7 /* UITableView+Extensions.swift */,
 				28D9C39A394DFF2A2F1315ABAA81C2F6 /* UIView+Extensions.swift */,
+				E2BCCC5C25E5835600AC4822 /* UIViewController+Extensions.swift */,
 			);
 			name = Extensions;
 			path = DPLibrary/Extensions;
@@ -506,6 +508,7 @@
 			isa = PBXGroup;
 			children = (
 				E2BCCC5925E5835600AC4822 /* Angle.swift */,
+				E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */,
 				E2BF548425DF04F8009B300A /* DateFormatType.swift */,
 				E2BCCC5325E5835600AC4822 /* Distance.swift */,
 				E2BCCC5825E5835600AC4822 /* Time.swift */,
@@ -620,20 +623,14 @@
 		E2BCCC5025E5835600AC4822 /* _not_formatted */ = {
 			isa = PBXGroup;
 			children = (
-				E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */,
-				E2BCCC5225E5835600AC4822 /* AppVersion.swift */,
 				E2BCCC6325E5835600AC4822 /* DPLoggable.swift */,
 				E2BCCC6525E5835600AC4822 /* DPStoredParameter.swift */,
-				E2BCCC5525E5835600AC4822 /* Environment.swift */,
-				E2BCCC5625E5835600AC4822 /* FileManager+FileMethods.swift */,
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
 				E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */,
 				E2BCCC5E25E5835600AC4822 /* UILabel+AdjustsFontSizeToFitWidth.swift */,
 				E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift */,
-				E2BCCC5C25E5835600AC4822 /* UIViewController+Keyboard.swift */,
 				E2BCCC6025E5835600AC4822 /* NumberAdduction */,
 				E2BCCC8325E5840100AC4822 /* StyleWrapper */,
-				E25FFF6725E5905A008E4494 /* ScreenOffset.swift */,
 			);
 			name = _not_formatted;
 			path = DPLibrary/_not_formatted;
@@ -675,7 +672,10 @@
 		E2CFFC3025E82BB400B0FDB9 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				E2BCCC5225E5835600AC4822 /* AppVersion.swift */,
+				E2BCCC5525E5835600AC4822 /* Environment.swift */,
 				E2BCCC5B25E5835600AC4822 /* PlayState.swift */,
+				E25FFF6725E5905A008E4494 /* ScreenOffset.swift */,
 				E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */,
 			);
 			name = Enums;
@@ -1007,7 +1007,7 @@
 				E2BCCC9C25E5840200AC4822 /* StyleWrapper+UIImageView.swift in Sources */,
 				EC60820674D7530E79FA1E2A83A160B1 /* Collection+Extensions.swift in Sources */,
 				DB1023359956EB7FDC6C5AEDB236D2B5 /* Date+Extensions.swift in Sources */,
-				E2BCCC7025E5835600AC4822 /* UIViewController+Keyboard.swift in Sources */,
+				E2BCCC7025E5835600AC4822 /* UIViewController+Extensions.swift in Sources */,
 				E2BCCCA325E5840200AC4822 /* StyleWrapper+UILabel.swift in Sources */,
 				9F14B4731D62867F67332BD586B42120 /* DPLibrary-dummy.m in Sources */,
 				E2BF548525DF04F8009B300A /* DateFormatType.swift in Sources */,
@@ -1037,7 +1037,7 @@
 				E2BCCC6925E5835600AC4822 /* UITapGestureRecognizer+DidTapAttributedTextInLabel.swift in Sources */,
 				E2BCCC6F25E5835600AC4822 /* PlayState.swift in Sources */,
 				E2BCCC9625E5840200AC4822 /* StyleWrapper+UIView.swift in Sources */,
-				E2BCCC6B25E5835600AC4822 /* FileManager+FileMethods.swift in Sources */,
+				E2BCCC6B25E5835600AC4822 /* FileManager+Extensions.swift in Sources */,
 				E2BCCC7425E5835600AC4822 /* NumberAdduction.swift in Sources */,
 				566DC177BD9F50321C897EC4D1485740 /* UICollectionView+Extensions.swift in Sources */,
 				8A02E5236622F215D552791413F80234 /* UIImage+Extensions.swift in Sources */,

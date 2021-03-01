@@ -1,10 +1,3 @@
-//
-//  IntRawValueOptionalable.swift
-//  giberno
-//
-//  Created by Дмитрий Поляков on 29.01.2021.
-//
-
 import Foundation
 
 protocol IntRawValueOptionalable {
