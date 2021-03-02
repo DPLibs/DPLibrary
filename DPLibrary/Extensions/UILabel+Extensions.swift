@@ -3,6 +3,12 @@ import UIKit
 
 public extension UILabel {
     
+    // MARK: - Size methods
+    
+    /// Method determines whether the label reduces the text’s font size to fit the title string into the label’s bounding rectangle.
+    /// - Parameter size: Estimated label frame size.
+    /// - Parameter minimumFontSize: Minimum label font size.
+    ///
     func adjustsFontSizeToFitWidth(estimatedFrameSize size: CGSize, minimumFontSize: CGFloat) {
         var font = self.font ?? UIFont.systemFont(ofSize: 16, weight: .regular)
         var index = font.pointSize
@@ -44,28 +50,30 @@ public extension UILabel {
         self.text = text
     }
     
-    func isTruncated(forNumberOfLines value: Int) -> Bool {
-        self.calculateMaxLines() > value
-//        self.calculateNumberOfLinesAll()
-    }
+    // MARK: - Number of lines methods
     
-    #warning("remove or not remove")
-    func calculateNumberOfLinesAll() -> Int {
+    /// Returns the count of all rows, regardless of the set parameter *numberOfLines*.
+    ///
+    func calculateAllNumberOfLines() -> Int {
         guard let myText = self.text as NSString?, let font = self.font else { return 0 }
+        
         let rect = CGSize(width: self.bounds.width, height: CGFloat.greatestFiniteMagnitude)
-        let labelSize = myText.boundingRect(with: rect, options: .usesLineFragmentOrigin, attributes: [NSAttributedString.Key.font: font], context: nil)
+        let labelSize = myText.boundingRect(
+            with: rect,
+            options: .usesLineFragmentOrigin,
+            attributes: [NSAttributedString.Key.font: font],
+            context: nil
+        )
+        
         return Int(ceil(CGFloat(labelSize.height) / self.font.lineHeight))
     }
     
-    func calculateMaxLines() -> Int {
-        let maxSize = CGSize(width: frame.size.width, height: CGFloat(Float.infinity))
-        let charSize = font.lineHeight
-        let text = (self.text ?? "") as NSString
-        guard let textFont = font else { return 0 }
-        let textSize = text.boundingRect(with: maxSize, options: .usesLineFragmentOrigin, attributes: [.font: textFont], context: nil)
-        let lines = Int(textSize.height / charSize)
-        
-        return lines
+    /// Returns *true* if the number of all lines is greater than the specified *value*.
+    /// - Parameter value: Specified number of lines for compare.
+    /// - Returns: Comparision result.
+    ///
+    func isTruncated(forNumberOfLines value: Int) -> Bool {
+        self.calculateAllNumberOfLines() > value
     }
     
 }

@@ -3,6 +3,13 @@ import UIKit
 
 public extension UITapGestureRecognizer {
     
+    // MARK: - Label methods
+    
+    /// Method determines whether a tap was made by a piece of text in the label.
+    /// - Parameter label - Label for determines tap.
+    /// - Parameter targetRange - Text range for determines tap.
+    /// - Returns: Returns true if the tap was performed.
+    ///
     func didTapAttributedTextInLabel(_ label: UILabel, inRange targetRange: NSRange) -> Bool {
         guard let attributedText = label.attributedText else { return false }
         
