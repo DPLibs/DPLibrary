@@ -7,7 +7,7 @@ public extension UIView {
     
     /// Creates an image based on a view.
     /// - Parameter size: Created image size.
-    /// - Parameter fillColor: Created image fill color, default - *UIColor.white*.
+    /// - Parameter fillColor: Created image fill color, default - `UIColor.white`.
     /// - Returns: Created image.
     ///
     func toImage(size: CGSize, fillColor: UIColor = .white) -> UIImage? {
@@ -26,7 +26,7 @@ public extension UIView {
     }
     
     /// Creates an image based on a view wirh size equal bounds size.
-    /// - Parameter fillColor: Created image fill color, default - *UIColor.white*.
+    /// - Parameter fillColor: Created image fill color, default - `UIColor.white`.
     /// - Returns: Created image.
     ///
     func toImageWithBoundsSize(fillColor: UIColor = .white) -> UIImage? {

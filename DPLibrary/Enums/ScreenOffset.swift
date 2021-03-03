@@ -26,7 +26,7 @@ public enum ScreenOffset {
     
     /// Return screen offset value.
     /// - Parameter viewController: Screen offset for viewController.
-    /// - Parameter whenNotHidden: When *true*, it returns the offset value for the element if it is not hidden or return 0.
+    /// - Parameter whenNotHidden: When `true`, it returns the offset value for the element if it is not hidden or return 0.
     /// - Returns: Screen offset value.
     ///
     public func calculateValue(for viewController: UIViewController?, whenNotHidden: Bool = true) -> CGFloat {
@@ -74,7 +74,7 @@ public extension Array where Element == ScreenOffset {
     
     /// Return sum of screen offset values.
     /// - Parameter viewController: Screen offset for viewController.
-    /// - Parameter whenNotHidden: When *true* return offset if offset for element not hidden or 0.
+    /// - Parameter whenNotHidden: When `true` return offset if offset for element not hidden or 0.
     /// - Returns: Sum of screen offset values.
     ///
     func calculateValue(for viewController: UIViewController?, whenNotHidden: Bool = true) -> CGFloat {
@@ -112,7 +112,7 @@ public extension UIViewController {
     
     /// Return sum of screen offset values.
     /// - Parameter screenOffsets: Array of screen offsets.
-    /// - Parameter whenNotHidden: When *true* return offset if offset for element not hidden or 0.
+    /// - Parameter whenNotHidden: When `true` return offset if offset for element not hidden or 0.
     /// - Returns: Sum of screen offset values.
     ///
     func getScreenOffsets(_ screenOffsets: [ScreenOffset], whenNotHidden: Bool = true) -> CGFloat {

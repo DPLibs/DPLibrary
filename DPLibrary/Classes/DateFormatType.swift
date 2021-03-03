@@ -4,12 +4,12 @@ import Foundation
 ///
 public struct DateFormatType {
     
-    /// Variable dateFormat for use in DateFromatter. Example: *dd.MM.yyyy*
+    /// Variable dateFormat for use in DateFromatter. Example: `dd.MM.yyyy`
     ///
     public let dateFormat: String
     
-    /// Variable dateFormat for use in DateFromatter. Example: *dd.MM.yyyy*
-    /// - Parameter dateFormat - Variable dateFormat for use in DateFromatter. Example: *dd.MM.yyyy*.
+    /// Variable dateFormat for use in DateFromatter. Example: `dd.MM.yyyy`
+    /// - Parameter dateFormat - Variable dateFormat for use in DateFromatter. Example: `dd.MM.yyyy`.
     ///
     public init(_ dateFormat: String) {
         self.dateFormat = dateFormat

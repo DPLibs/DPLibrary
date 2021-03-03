@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'DPLibrary'
-  s.version          = '2.0.0'
+  s.version          = '2.0.1'
   s.summary          = 'DP library'
   s.description      = 'A set of useful utilities'
   s.homepage         = 'https://github.com/DPLibs/DPLibrary'

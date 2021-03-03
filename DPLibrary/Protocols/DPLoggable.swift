@@ -4,11 +4,11 @@ import Foundation
 ///
 public protocol DPLoggable {
     
-    /// If *talse* all methods logging not printing.
+    /// If `talse` all methods logging not printing.
     ///
     var loggingEnabled: Bool { get set }
     
-    /// Printing *items* by *print()*.
+    /// Printing `items` by `print()`.
     /// - Parameter items: Sequence of items for printing.
     ///
     func logging(_ items: Any...)

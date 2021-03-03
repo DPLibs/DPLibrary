@@ -1,8 +1,8 @@
 import Foundation
 import KeychainSwift
 
-/// Struct for defining the stored parameter with generic type *ParameterType*.
-/// Availible types for *ParameterType*: *String*, *Int*, *Double*, *Float*, *Bool*, *Data*
+/// Struct for defining the stored parameter with generic type `ParameterType`.
+/// Availible types for `ParameterType`: `String`, `Int`, `Double`, `Float`, `Bool`, `Data`
 ///
 public struct DPStoredParameter<ParameterType: Any> {
     
@@ -12,11 +12,11 @@ public struct DPStoredParameter<ParameterType: Any> {
     ///
     public enum Store {
         
-        /// Stored in *UserDefaults*.
+        /// Stored in `UserDefaults`.
         ///
         case UserDefaults
         
-        /// Stored in *Keychain*.
+        /// Stored in `Keychain`.
         ///
         case Keychain
     }
@@ -27,7 +27,7 @@ public struct DPStoredParameter<ParameterType: Any> {
     
     // MARK: - Props
     
-    /// Prefix for keychain key. Default: *"\(Bundle.main.bundleIdentifier ?? "")_keychain_"*.
+    /// Prefix for keychain key. Default: `"\(Bundle.main.bundleIdentifier ?? "")_keychain_"`.
     ///
     public let keychainKeyPrefix: String
     
@@ -35,7 +35,7 @@ public struct DPStoredParameter<ParameterType: Any> {
     ///
     public let name: String
     
-    /// Parameter stored key. Default: *"stored_parameter_\(name)"*.
+    /// Parameter stored key. Default: `"stored_parameter_\(name)"`.
     ///
     public let key: String
     
