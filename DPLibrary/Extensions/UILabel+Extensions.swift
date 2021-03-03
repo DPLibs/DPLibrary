@@ -52,7 +52,7 @@ public extension UILabel {
     
     // MARK: - Number of lines methods
     
-    /// Returns the count of all rows, regardless of the set parameter *numberOfLines*.
+    /// Returns the count of all rows, regardless of the set parameter `numberOfLines`.
     ///
     func calculateAllNumberOfLines() -> Int {
         guard let myText = self.text as NSString?, let font = self.font else { return 0 }
@@ -68,7 +68,7 @@ public extension UILabel {
         return Int(ceil(CGFloat(labelSize.height) / self.font.lineHeight))
     }
     
-    /// Returns *true* if the number of all lines is greater than the specified *value*.
+    /// Returns `true` if the number of all lines is greater than the specified `value`.
     /// - Parameter value: Specified number of lines for compare.
     /// - Returns: Comparision result.
     ///

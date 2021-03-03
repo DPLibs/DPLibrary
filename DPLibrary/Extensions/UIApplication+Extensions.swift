@@ -44,7 +44,7 @@ public extension UIApplication {
     // MARK: - Open methods
     
     /// Opens the application settings page on the device.
-    /// - Returns: Retrun *true* if settings opening.
+    /// - Returns: Retrun `true` if settings opening.
     ///
     func openApplicationSettings() -> Bool {
         guard let url = URL(string: UIApplication.openSettingsURLString), self.canOpenURL(url) else { return false }

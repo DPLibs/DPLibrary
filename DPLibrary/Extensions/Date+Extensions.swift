@@ -72,7 +72,7 @@ public extension Date {
     }
     
     /// Returns all dates of the days of the current week.
-    /// - Parameter firstWeekday: Starting day of the week. Default: *monday*.
+    /// - Parameter firstWeekday: Starting day of the week. Default: `monday`.
     /// - Returns: Dates of the days of the current week .
     ///
     func getWeekDates(firstWeekday: WeekDay = .monday) -> [Date] {
@@ -93,7 +93,7 @@ public extension Date {
     
     /// Returns all dates of the days of the current week with dates of many weeks next.
     /// - Parameter weeksCount: Count of weeks next.
-    /// - Parameter firstWeekday: Starting day of the week. Default: *monday*.
+    /// - Parameter firstWeekday: Starting day of the week. Default: `monday`.
     /// - Returns: Dates of the days of the current week .
     ///
     func getWeekDates(withManyWeeksNext weeksCount: Int, firstWeekday: WeekDay = .monday) -> [Date] {

@@ -1,24 +1,23 @@
 import Foundation
 
-protocol IntRawValueOptionalable {
-    var rawValue: Int { get }
+/// Protocol allows you to create `Self` from the optional `rawValue` or return the default value.
+///
+public protocol CreateOrDefaultInitable {
+    associatedtype RawValueType
     
-    init?(rawValue: Int)
+    var rawValue: RawValueType { get }
+    
+    init?(rawValue: RawValueType)
     
     static var defaultValue: Self { get }
     
-    static func create(rawValueOptional: Int?) -> Self
-    static func create(rawValueOptional: Int?, defaultValue: Self) -> Self
+    static func createOrDefault(rawValue: RawValueType?) -> Self
 }
 
-extension IntRawValueOptionalable {
+public extension CreateOrDefaultInitable {
     
-    static func create(rawValueOptional: Int?) -> Self {
-        self.init(rawValue: rawValueOptional ?? self.defaultValue.rawValue) ?? self.defaultValue
-    }
-    
-    static func create(rawValueOptional: Int?, defaultValue: Self) -> Self {
-        self.init(rawValue: rawValueOptional ?? defaultValue.rawValue) ?? defaultValue
+    static func createOrDefault(rawValue: RawValueType?) -> Self {
+        self.init(rawValue: rawValue ?? self.defaultValue.rawValue) ?? self.defaultValue
     }
     
 }

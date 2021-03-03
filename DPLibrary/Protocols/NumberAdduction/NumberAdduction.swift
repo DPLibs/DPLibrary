@@ -5,39 +5,39 @@ import UIKit
 ///
 public protocol NumberAdduction {
     
-    /// Returns *Int*.
+    /// Returns `Int`.
     ///
     var toInt: Int { get }
     
-    /// Returns *Double*.
+    /// Returns `Double`.
     ///
     var toDouble: Double { get }
     
-    /// Returns *Float*.
+    /// Returns `Float`.
     ///
     var toFloat: Float { get }
     
-    /// Returns *CGFloat*.
+    /// Returns `CGFloat`.
     ///
     var toCGFloat: CGFloat { get }
     
-    /// Returns *TimeInterval*.
+    /// Returns `TimeInterval`.
     ///
     var toTimeInterval: TimeInterval { get }
     
-    /// Returns *NSNumber*.
+    /// Returns `NSNumber`.
     ///
     var toNSNumber: NSNumber { get }
     
-    /// Returns radians *CGFloat* by degrees.
+    /// Returns radians `CGFloat` by degrees.
     ///
     var toRadiansByDegrees: CGFloat { get }
     
-    /// Returns degrees *CGFloat* by radians.
+    /// Returns degrees `CGFloat` by radians.
     ///
     var toDegreesByRadians: CGFloat { get }
     
-    /// Return *true* if paramter is number with required maximum count of integer digits and maximum count of fraction digits.
+    /// Return `true` if paramter is number with required maximum count of integer digits and maximum count of fraction digits.
     /// - Parameter maximumIntegerDigits: Maximum count of integer digits.
     /// - Parameter maximumFractionDigits: Maximum count of fraction digits.
     ///

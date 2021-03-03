@@ -13,7 +13,7 @@ public extension UIViewController {
         self.view.addGestureRecognizer(tap)
     }
 
-    /// Handler for *endEditingOnTap()* tapGestureRecognizer .
+    /// Handler for `endEditingOnTap()` tapGestureRecognizer .
     ///
     @objc
     private func didHideKeyboardOnTap() {
