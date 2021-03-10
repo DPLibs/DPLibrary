@@ -533,7 +533,7 @@
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
 				E2BCCC5825E5835600AC4822 /* Time.swift */,
 				E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */,
-				E2295DEB25F946E600840E27 /* FieldValidator */,
+				E2295DEB25F946E600840E27 /* FieldValidation */,
 				E2BCCC8325E5840100AC4822 /* StyleWrapper */,
 			);
 			name = Classes;
@@ -628,14 +628,14 @@
 			);
 			sourceTree = "<group>";
 		};
-		E2295DEB25F946E600840E27 /* FieldValidator */ = {
+		E2295DEB25F946E600840E27 /* FieldValidation */ = {
 			isa = PBXGroup;
 			children = (
 				E2295DEC25F946E600840E27 /* FieldValidation.swift */,
 				E2295E4025F94BBA00840E27 /* FieldValidations.swift */,
 				E2295DED25F946E600840E27 /* Validations */,
 			);
-			path = FieldValidator;
+			path = FieldValidation;
 			sourceTree = "<group>";
 		};
 		E2295DED25F946E600840E27 /* Validations */ = {
