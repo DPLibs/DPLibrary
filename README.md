@@ -26,8 +26,11 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 
 ### Classes
 
-**Angle** Struct for defining the geometric angle.
 [**Angle**](DPLibrary/Classes/Angle.swift) Struct for defining the geometric angle.
+
+[**AppServerConfiguration**](DPLibrary/Classes/AppServerConfiguration.swift) Struct for defining the application remote server configuration.
+
+[**DateFormatType**](DPLibrary/Classes/DateFormatType.swift) Struct for storing preset values for dateFormat in DateFromatter.
 
 ### Enums
 
