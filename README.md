@@ -27,48 +27,48 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 ### Classes
 
 [**Angle**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Angle.swift) - struct for defining the geometric angle.<br/>
-[**AppServerConfiguration**](DPLibrary/Classes/AppServerConfiguration.swift) - struct for defining the application remote server configuration.<br/>
-[**DateFormatType**](DPLibrary/Classes/DateFormatType.swift) - struct for storing preset values for dateFormat in DateFromatter.<br/>
-[**Distance**](DPLibrary/Classes/Distance.swift) - struct for defining the distance.<br/>
-[**DPStoredParameter**](DPLibrary/Classes/DPStoredParameter.swift) - struct for defining the stored parameter with generic type `ParameterType`. <br/>
-[**ImageModel**](DPLibrary/Classes/ImageModel.swift) - struct for defining the image.<br/>
-[**Time**](DPLibrary/Classes/Time.swift) - struct for determining the time.<br/>
-[**TimeUnit**](DPLibrary/Classes/TimeUnit.swift) - struct for determining the time interval unit.<br/>
-[**FieldValidation**](DPLibrary/Classes/FieldValidation)<br/>
+[**AppServerConfiguration**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/AppServerConfiguration.swift) - struct for defining the application remote server configuration.<br/>
+[**DateFormatType**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/DateFormatType.swift) - struct for storing preset values for dateFormat in DateFromatter.<br/>
+[**Distance**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Distance.swift) - struct for defining the distance.<br/>
+[**DPStoredParameter**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/DPStoredParameter.swift) - struct for defining the stored parameter with generic type `ParameterType`. <br/>
+[**ImageModel**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/ImageModel.swift) - struct for defining the image.<br/>
+[**Time**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Time.swift) - struct for determining the time.<br/>
+[**TimeUnit**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/TimeUnit.swift) - struct for determining the time interval unit.<br/>
+[**FieldValidation**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/FieldValidation)<br/>
 
 ### Enums
 
-[**AppVersion**](DPLibrary/Enums/AppVersion.swift) - enum for determining the application version.<br/>
-[**Environment**](DPLibrary/Enums/Environment.swift) - enum for determining the application environment.<br/>
-[**PlayState**](DPLibrary/Enums/PlayState.swift) - enum for determining the play state.<br/>
-[**ScreenOffset**](DPLibrary/Enums/ScreenOffset.swift) - enum for determining the screen offset.<br/>
-[**WeekDay**](DPLibrary/Enums/WeekDay.swift) - enum for determining the week day type.<br/>
+[**AppVersion**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Enums/AppVersion.swift) - enum for determining the application version.<br/>
+[**Environment**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Enums/Environment.swift) - enum for determining the application environment.<br/>
+[**PlayState**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Enums/PlayState.swift) - enum for determining the play state.<br/>
+[**ScreenOffset**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Enums/ScreenOffset.swift) - enum for determining the screen offset.<br/>
+[**WeekDay**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Enums/WeekDay.swift) - enum for determining the week day type.<br/>
 
 ### Extensions
 
-[**Array**](DPLibrary/Extensions/Array+Extensions.swift)<br/>
-[**Collection**](DPLibrary/Extensions/Collection+Extensions.swift)<br/>
-[**Date**](DPLibrary/Extensions/Date+Extensions.swift)<br/>
-[**Encodable**](DPLibrary/Extensions/Encodable+Extensions.swift)<br/>
-[**FileManager**](DPLibrary/Extensions/FileManager+Extensions.swift)<br/>
-[**NotificationCenter**](DPLibrary/Extensions/NotificationCenter+Extensions.swift)<br/>
-[**NSMutableAttributedString**](DPLibrary/Extensions/NSMutableAttributedString+Extensions.swift)<br/>
-[**String**](DPLibrary/Extensions/String+Extensions.swift)<br/>
-[**UIApplication**](DPLibrary/Extensions/UIApplication+Extensions.swift)<br/>
-[**UIButton**](DPLibrary/Extensions/UIButton+Extensions.swift)<br/>
-[**UICollectionView**](DPLibrary/Extensions/UICollectionView+Extensions.swift)<br/>
-[**UIImage**](DPLibrary/Extensions/UIImage+Extensions.swift)<br/>
-[**UIImageView**](DPLibrary/Extensions/UIImageView+Extensions.swift)<br/>
-[**UILabel**](DPLibrary/Extensions/UILabel+Extensions.swift)<br/>
-[**UIStackView**](DPLibrary/Extensions/UIStackView+Extensions.swift)<br/>
-[**UITableView**](DPLibrary/Extensions/UITableView+Extensions.swift)<br/>
-[**UITapGestureRecognizer**](DPLibrary/Extensions/UITapGestureRecognizer+Extensions.swift)<br/>
-[**UIView**](DPLibrary/Extensions/UIView+Extensions.swift)<br/>
-[**UIViewController**](DPLibrary/Extensions/UIViewController+Extensions.swift)<br/>
+[**Array**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Array+Extensions.swift)<br/>
+[**Collection**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Collection+Extensions.swift)<br/>
+[**Date**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Date+Extensions.swift)<br/>
+[**Encodable**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Encodable+Extensions.swift)<br/>
+[**FileManager**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/FileManager+Extensions.swift)<br/>
+[**NotificationCenter**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/NotificationCenter+Extensions.swift)<br/>
+[**NSMutableAttributedString**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/NSMutableAttributedString+Extensions.swift)<br/>
+[**String**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/String+Extensions.swift)<br/>
+[**UIApplication**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIApplication+Extensions.swift)<br/>
+[**UIButton**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIButton+Extensions.swift)<br/>
+[**UICollectionView**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UICollectionView+Extensions.swift)<br/>
+[**UIImage**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIImage+Extensions.swift)<br/>
+[**UIImageView**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIImageView+Extensions.swift)<br/>
+[**UILabel**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UILabel+Extensions.swift)<br/>
+[**UIStackView**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIStackView+Extensions.swift)<br/>
+[**UITableView**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UITableView+Extensions.swift)<br/>
+[**UITapGestureRecognizer**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UITapGestureRecognizer+Extensions.swift)<br/>
+[**UIView**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIView+Extensions.swift)<br/>
+[**UIViewController**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/UIViewController+Extensions.swift)<br/>
 
 ### Protocols
 
-[**DPLoggable**](DPLibrary/Protocols/DPLoggable.swift) - protocol for print log in console.<br/>
-[**CreateOrDefaultInitable**](DPLibrary/Protocols/CreateOrDefaultInitable.swift) - protocol allows you to create `Self` from the optional `rawValue` or return the default value.<br/>
-[**NumberAdduction**](DPLibrary/Protocols/NumberAdduction/NumberAdduction.swift) - protocol for number adduction.<br/>
-[**NumberAdductionOptional**](DPLibrary/Protocols/NumberAdduction/NumberAdductionOptional.swift) - protocol for number adduction optional.<br/>
+[**DPLoggable**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Protocols/DPLoggable.swift) - protocol for print log in console.<br/>
+[**CreateOrDefaultInitable**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Protocols/CreateOrDefaultInitable.swift) - protocol allows you to create `Self` from the optional `rawValue` or return the default value.<br/>
+[**NumberAdduction**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Protocols/NumberAdduction/NumberAdduction.swift) - protocol for number adduction.<br/>
+[**NumberAdductionOptional**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Protocols/NumberAdduction/NumberAdductionOptional.swift) - protocol for number adduction optional.<br/>
