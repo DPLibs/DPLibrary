@@ -26,7 +26,7 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 
 ### Classes
 
-[**Angle**](DPLibrary/Classes/Angle.swift) - struct for defining the geometric angle.<br/>
+[**Angle**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Angle.swift) - struct for defining the geometric angle.<br/>
 [**AppServerConfiguration**](DPLibrary/Classes/AppServerConfiguration.swift) - struct for defining the application remote server configuration.<br/>
 [**DateFormatType**](DPLibrary/Classes/DateFormatType.swift) - struct for storing preset values for dateFormat in DateFromatter.<br/>
 [**Distance**](DPLibrary/Classes/Distance.swift) - struct for defining the distance.<br/>
