@@ -86,6 +86,14 @@
 		D5B5FC3945133379C988C47F159B3E7F /* Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 170633AFC33E1368EC8BD905483DC086 /* Placeholder.swift */; };
 		D9CD6A2615E781A94D4AC08EE4BD03D9 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542720ECCE518F1AE7C4E31E2670A6F6 /* ImageView+Kingfisher.swift */; };
 		DB1023359956EB7FDC6C5AEDB236D2B5 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C427FACAB81ECDE010C089CC732B4666 /* Date+Extensions.swift */; };
+		E2295DF425F946E600840E27 /* FieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DEC25F946E600840E27 /* FieldValidation.swift */; };
+		E2295DF525F946E600840E27 /* EmailFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DEE25F946E600840E27 /* EmailFieldValidation.swift */; };
+		E2295DF625F946E600840E27 /* MaxLengthFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DEF25F946E600840E27 /* MaxLengthFieldValidation.swift */; };
+		E2295DF725F946E600840E27 /* MatchPredicateFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DF025F946E600840E27 /* MatchPredicateFieldValidation.swift */; };
+		E2295DF825F946E600840E27 /* MinLengthFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DF125F946E600840E27 /* MinLengthFieldValidation.swift */; };
+		E2295DF925F946E600840E27 /* DateFieldValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DF225F946E600840E27 /* DateFieldValidation.swift */; };
+		E2295DFA25F946E600840E27 /* NumberValidation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295DF325F946E600840E27 /* NumberValidation.swift */; };
+		E2295E4125F94BBA00840E27 /* FieldValidations.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2295E4025F94BBA00840E27 /* FieldValidations.swift */; };
 		E25FFF6825E5905A008E4494 /* ScreenOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FFF6725E5905A008E4494 /* ScreenOffset.swift */; };
 		E2BCCC6625E5835600AC4822 /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */; };
 		E2BCCC6725E5835600AC4822 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5225E5835600AC4822 /* AppVersion.swift */; };
@@ -93,7 +101,7 @@
 		E2BCCC6925E5835600AC4822 /* UITapGestureRecognizer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+Extensions.swift */; };
 		E2BCCC6A25E5835600AC4822 /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5525E5835600AC4822 /* Environment.swift */; };
 		E2BCCC6B25E5835600AC4822 /* FileManager+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5625E5835600AC4822 /* FileManager+Extensions.swift */; };
-		E2BCCC6C25E5835600AC4822 /* IntRawValueOptionalable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */; };
+		E2BCCC6C25E5835600AC4822 /* CreateOrDefaultInitable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5725E5835600AC4822 /* CreateOrDefaultInitable.swift */; };
 		E2BCCC6D25E5835600AC4822 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5825E5835600AC4822 /* Time.swift */; };
 		E2BCCC6E25E5835600AC4822 /* Angle.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5925E5835600AC4822 /* Angle.swift */; };
 		E2BCCC6F25E5835600AC4822 /* PlayState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5B25E5835600AC4822 /* PlayState.swift */; };
@@ -307,6 +315,14 @@
 		D8A224F3100B0D3154F4B81A11DB3362 /* Pods_DPLibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPLibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD777DA17C47F8D765665AE4CB5116FE /* ImageProgressive.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ImageProgressive.swift; path = Sources/Image/ImageProgressive.swift; sourceTree = "<group>"; };
 		E040603F3364EE814DA0C394B66B1460 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
+		E2295DEC25F946E600840E27 /* FieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FieldValidation.swift; sourceTree = "<group>"; };
+		E2295DEE25F946E600840E27 /* EmailFieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EmailFieldValidation.swift; sourceTree = "<group>"; };
+		E2295DEF25F946E600840E27 /* MaxLengthFieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MaxLengthFieldValidation.swift; sourceTree = "<group>"; };
+		E2295DF025F946E600840E27 /* MatchPredicateFieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MatchPredicateFieldValidation.swift; sourceTree = "<group>"; };
+		E2295DF125F946E600840E27 /* MinLengthFieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinLengthFieldValidation.swift; sourceTree = "<group>"; };
+		E2295DF225F946E600840E27 /* DateFieldValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateFieldValidation.swift; sourceTree = "<group>"; };
+		E2295DF325F946E600840E27 /* NumberValidation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumberValidation.swift; sourceTree = "<group>"; };
+		E2295E4025F94BBA00840E27 /* FieldValidations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldValidations.swift; sourceTree = "<group>"; };
 		E229747460993A5FC643F2BA8D6017E2 /* Pods_DPLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25FFF6725E5905A008E4494 /* ScreenOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOffset.swift; sourceTree = "<group>"; };
 		E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServerConfiguration.swift; sourceTree = "<group>"; };
@@ -315,7 +331,7 @@
 		E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITapGestureRecognizer+Extensions.swift"; sourceTree = "<group>"; };
 		E2BCCC5525E5835600AC4822 /* Environment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
 		E2BCCC5625E5835600AC4822 /* FileManager+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "FileManager+Extensions.swift"; sourceTree = "<group>"; };
-		E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntRawValueOptionalable.swift; sourceTree = "<group>"; };
+		E2BCCC5725E5835600AC4822 /* CreateOrDefaultInitable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateOrDefaultInitable.swift; sourceTree = "<group>"; };
 		E2BCCC5825E5835600AC4822 /* Time.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
 		E2BCCC5925E5835600AC4822 /* Angle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Angle.swift; sourceTree = "<group>"; };
 		E2BCCC5B25E5835600AC4822 /* PlayState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayState.swift; sourceTree = "<group>"; };
@@ -517,6 +533,7 @@
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
 				E2BCCC5825E5835600AC4822 /* Time.swift */,
 				E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */,
+				E2295DEB25F946E600840E27 /* FieldValidator */,
 				E2BCCC8325E5840100AC4822 /* StyleWrapper */,
 			);
 			name = Classes;
@@ -611,11 +628,34 @@
 			);
 			sourceTree = "<group>";
 		};
+		E2295DEB25F946E600840E27 /* FieldValidator */ = {
+			isa = PBXGroup;
+			children = (
+				E2295DEC25F946E600840E27 /* FieldValidation.swift */,
+				E2295E4025F94BBA00840E27 /* FieldValidations.swift */,
+				E2295DED25F946E600840E27 /* Validations */,
+			);
+			path = FieldValidator;
+			sourceTree = "<group>";
+		};
+		E2295DED25F946E600840E27 /* Validations */ = {
+			isa = PBXGroup;
+			children = (
+				E2295DEE25F946E600840E27 /* EmailFieldValidation.swift */,
+				E2295DEF25F946E600840E27 /* MaxLengthFieldValidation.swift */,
+				E2295DF025F946E600840E27 /* MatchPredicateFieldValidation.swift */,
+				E2295DF125F946E600840E27 /* MinLengthFieldValidation.swift */,
+				E2295DF225F946E600840E27 /* DateFieldValidation.swift */,
+				E2295DF325F946E600840E27 /* NumberValidation.swift */,
+			);
+			path = Validations;
+			sourceTree = "<group>";
+		};
 		E2378DB125EEDBC100121D04 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
 				E2BCCC6325E5835600AC4822 /* DPLoggable.swift */,
-				E2BCCC5725E5835600AC4822 /* IntRawValueOptionalable.swift */,
+				E2BCCC5725E5835600AC4822 /* CreateOrDefaultInitable.swift */,
 				E2BCCC6025E5835600AC4822 /* NumberAdduction */,
 			);
 			name = Protocols;
@@ -999,19 +1039,26 @@
 				E2BCCCA425E5840200AC4822 /* StyleWrapper+UITableCell.swift in Sources */,
 				E2BCCC7225E5835600AC4822 /* UILabel+Extensions.swift in Sources */,
 				E2BCCC7325E5835600AC4822 /* ImageModel.swift in Sources */,
+				E2295DF525F946E600840E27 /* EmailFieldValidation.swift in Sources */,
+				E2295DF425F946E600840E27 /* FieldValidation.swift in Sources */,
+				E2295DF625F946E600840E27 /* MaxLengthFieldValidation.swift in Sources */,
 				E2BCCCA525E5840200AC4822 /* StyleWrapper+UISwitch.swift in Sources */,
 				E2BCCC7525E5835600AC4822 /* NumberAdductionOptional.swift in Sources */,
+				E2295DF725F946E600840E27 /* MatchPredicateFieldValidation.swift in Sources */,
 				7C6006E1C0FCCBDD677ADA7CA3FC19C5 /* Array+Extensions.swift in Sources */,
-				E2BCCC6C25E5835600AC4822 /* IntRawValueOptionalable.swift in Sources */,
+				E2BCCC6C25E5835600AC4822 /* CreateOrDefaultInitable.swift in Sources */,
 				E2BCCC9925E5840200AC4822 /* StyleWrapper+UIStackView.swift in Sources */,
+				E2295DF925F946E600840E27 /* DateFieldValidation.swift in Sources */,
 				E2BCCC9C25E5840200AC4822 /* StyleWrapper+UIImageView.swift in Sources */,
 				EC60820674D7530E79FA1E2A83A160B1 /* Collection+Extensions.swift in Sources */,
 				DB1023359956EB7FDC6C5AEDB236D2B5 /* Date+Extensions.swift in Sources */,
 				E2BCCC7025E5835600AC4822 /* UIViewController+Extensions.swift in Sources */,
 				E2BCCCA325E5840200AC4822 /* StyleWrapper+UILabel.swift in Sources */,
+				E2295DF825F946E600840E27 /* MinLengthFieldValidation.swift in Sources */,
 				9F14B4731D62867F67332BD586B42120 /* DPLibrary-dummy.m in Sources */,
 				E2BF548525DF04F8009B300A /* DateFormatType.swift in Sources */,
 				E2BCCCA225E5840200AC4822 /* StyleWrapper.swift in Sources */,
+				E2295E4125F94BBA00840E27 /* FieldValidations.swift in Sources */,
 				E2BF543425DDC377009B300A /* NotificationCenter+Extensions.swift in Sources */,
 				32D18EBD5AEDC0DBC465E2786585F99F /* Encodable+Extensions.swift in Sources */,
 				E2BCCC9825E5840200AC4822 /* Stylable.swift in Sources */,
@@ -1026,6 +1073,7 @@
 				E2BCCC9D25E5840200AC4822 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */,
 				E2BCCC6D25E5835600AC4822 /* Time.swift in Sources */,
 				E2BCCC9525E5840200AC4822 /* StyleWrapper+UISearchBar.swift in Sources */,
+				E2295DFA25F946E600840E27 /* NumberValidation.swift in Sources */,
 				931214ED4B6EBE6842748DE5BFF3D99B /* UIApplication+Extensions.swift in Sources */,
 				E2BCCC6825E5835600AC4822 /* Distance.swift in Sources */,
 				E25FFF6825E5905A008E4494 /* ScreenOffset.swift in Sources */,

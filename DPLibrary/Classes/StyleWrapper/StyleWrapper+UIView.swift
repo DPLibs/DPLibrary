@@ -3,6 +3,13 @@ import UIKit
 
 public extension StyleWrapper where Element: UIView {
     
+    // MARK: - Background color
+    static func backgroundColor(_ value: UIColor) -> StyleWrapper {
+        return .wrap { view in
+            view.backgroundColor = value
+        }
+    }
+    
     static func backgroundColorAlpha(_ value: CGFloat) -> StyleWrapper {
         return .wrap { view in
             view.backgroundColor = view.backgroundColor?.withAlphaComponent(value)
@@ -15,30 +22,19 @@ public extension StyleWrapper where Element: UIView {
         }
     }
     
-    static var backgroundColorBlack: StyleWrapper {
-        return .wrap { view in
-            view.backgroundColor = .black
-        }
-    }
-    
     static var backgroundColorWhite: StyleWrapper {
         return .wrap { view in
             view.backgroundColor = .white
         }
     }
     
-    static func backgroundColor(_ value: UIColor) -> StyleWrapper {
+    static var backgroundColorBlack: StyleWrapper {
         return .wrap { view in
-            view.backgroundColor = value
+            view.backgroundColor = .black
         }
     }
     
-    static func clipsToBounds(_ value: Bool) -> StyleWrapper {
-        return .wrap { view in
-            view.clipsToBounds = value
-        }
-    }
-    
+    // MARK: - Border
     static func borderWidth(_ value: CGFloat) -> StyleWrapper {
         return .wrap { view in
             view.layer.borderWidth = value
@@ -51,6 +47,7 @@ public extension StyleWrapper where Element: UIView {
         }
     }
     
+    // MARK: - Radius
     static func cornerRadius(_ value: CGFloat) -> StyleWrapper {
         return .wrap { view in
             view.layer.cornerRadius = value
@@ -94,6 +91,42 @@ public extension StyleWrapper where Element: UIView {
     static func maskedCorners(_ value: CACornerMask) -> StyleWrapper {
         return .wrap { view in
             view.layer.maskedCorners = value
+        }
+    }
+    
+    // MARK: - Shadow
+    static func shadow(color: UIColor, offset: CGSize, opacity: Float, radius: CGFloat) -> StyleWrapper {
+        return .wrap { view in
+            view.layer.masksToBounds = false
+            view.layer.shadowColor = color.cgColor
+            view.layer.shadowPath = UIBezierPath(roundedRect: view.bounds, cornerRadius: view.layer.cornerRadius).cgPath
+            view.layer.shadowOffset = offset
+            view.layer.shadowOpacity = opacity
+            view.layer.shadowRadius = radius
+        }
+    }
+    
+    static var shadowClear: StyleWrapper {
+        return .wrap { view in
+            view.layer.masksToBounds = false
+            view.layer.shadowColor = UIColor.clear.cgColor
+            view.layer.shadowPath = UIBezierPath(roundedRect: .zero, cornerRadius: .zero).cgPath
+            view.layer.shadowOffset = .zero
+            view.layer.shadowOpacity = .zero
+            view.layer.shadowRadius = .zero
+        }
+    }
+    
+    // MARK: - Other
+    static func tintColor(_ value: UIColor) -> StyleWrapper {
+        return .wrap { view in
+            view.tintColor = value
+        }
+    }
+    
+    static func clipsToBounds(_ value: Bool) -> StyleWrapper {
+        return .wrap { view in
+            view.clipsToBounds = value
         }
     }
     

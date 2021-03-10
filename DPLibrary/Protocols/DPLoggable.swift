@@ -6,7 +6,7 @@ public protocol DPLoggable {
     
     /// If `talse` all methods logging not printing.
     ///
-    var loggingEnabled: Bool { get set }
+    var loggingEnabled: Bool { get }
     
     /// Printing `items` by `print()`.
     /// - Parameter items: Sequence of items for printing.
