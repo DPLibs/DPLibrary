@@ -2,7 +2,7 @@ import Foundation
 import KeychainSwift
 
 /// Struct for defining the stored parameter with generic type `ParameterType`.
-/// Availible types for `ParameterType`: `String`, `Int`, `Double`, `Float`, `Bool`, `Data`
+/// Availible types for `ParameterType`: `String`, `Int`, `Double`, `Float`, `Bool`, `Data`.
 ///
 public struct DPStoredParameter<ParameterType: Any> {
     
