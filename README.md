@@ -46,25 +46,25 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 
 ### Extensions
 
-[**Array**](DPLibrary/Extensions/Array+Extensions.swift)
-[**Collection**](DPLibrary/Extensions/Collection+Extensions.swift)
-[**Date**](DPLibrary/Extensions/Date+Extensions.swift)
-[**Encodable**](DPLibrary/Extensions/Encodable+Extensions.swift)
-[**FileManager**](DPLibrary/Extensions/FileManager+Extensions.swift)
-[**NotificationCenter**](DPLibrary/Extensions/NotificationCenter+Extensions.swift)
-[**NSMutableAttributedString**](DPLibrary/Extensions/NSMutableAttributedString+Extensions.swift)
-[**String**](DPLibrary/Extensions/String+Extensions.swift)
-[**UIApplication**](DPLibrary/Extensions/UIApplication+Extensions.swift)
-[**UIButton**](DPLibrary/Extensions/UIButton+Extensions.swift)
-[**UICollectionView**](DPLibrary/Extensions/UICollectionView+Extensions.swift)
-[**UIImage**](DPLibrary/Extensions/UIImage+Extensions.swift)
-[**UIImageView**](DPLibrary/Extensions/UIImageView+Extensions.swift)
-[**UILabel**](DPLibrary/Extensions/UILabel+Extensions.swift)
-[**UIStackView**](DPLibrary/Extensions/UIStackView+Extensions.swift)
-[**UITableView**](DPLibrary/Extensions/UITableView+Extensions.swift)
-[**UITapGestureRecognizer**](DPLibrary/Extensions/UITapGestureRecognizer+Extensions.swift)
-[**UIView**](DPLibrary/Extensions/UIView+Extensions.swift)
-[**UIViewController**](DPLibrary/Extensions/UIViewController+Extensions.swift)
+[**Array**](DPLibrary/Extensions/Array+Extensions.swift)<br/>
+[**Collection**](DPLibrary/Extensions/Collection+Extensions.swift)<br/>
+[**Date**](DPLibrary/Extensions/Date+Extensions.swift)<br/>
+[**Encodable**](DPLibrary/Extensions/Encodable+Extensions.swift)<br/>
+[**FileManager**](DPLibrary/Extensions/FileManager+Extensions.swift)<br/>
+[**NotificationCenter**](DPLibrary/Extensions/NotificationCenter+Extensions.swift)<br/>
+[**NSMutableAttributedString**](DPLibrary/Extensions/NSMutableAttributedString+Extensions.swift)<br/>
+[**String**](DPLibrary/Extensions/String+Extensions.swift)<br/>
+[**UIApplication**](DPLibrary/Extensions/UIApplication+Extensions.swift)<br/>
+[**UIButton**](DPLibrary/Extensions/UIButton+Extensions.swift)<br/>
+[**UICollectionView**](DPLibrary/Extensions/UICollectionView+Extensions.swift)<br/>
+[**UIImage**](DPLibrary/Extensions/UIImage+Extensions.swift)<br/>
+[**UIImageView**](DPLibrary/Extensions/UIImageView+Extensions.swift)<br/>
+[**UILabel**](DPLibrary/Extensions/UILabel+Extensions.swift)<br/>
+[**UIStackView**](DPLibrary/Extensions/UIStackView+Extensions.swift)<br/>
+[**UITableView**](DPLibrary/Extensions/UITableView+Extensions.swift)<br/>
+[**UITapGestureRecognizer**](DPLibrary/Extensions/UITapGestureRecognizer+Extensions.swift)<br/>
+[**UIView**](DPLibrary/Extensions/UIView+Extensions.swift)<br/>
+[**UIViewController**](DPLibrary/Extensions/UIViewController+Extensions.swift)<br/>
 
 ### Protocols
 
