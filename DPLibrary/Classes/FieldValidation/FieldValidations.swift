@@ -31,16 +31,16 @@ public extension FieldValidations {
 // MARK: - Store
 public extension FieldValidations {
     
-    static func isEmailDefault() -> FieldValidations {
-        [.isEmailDefault()]
+    static var isEmailDefault: FieldValidations {
+        [.isEmailDefault]
     }
     
-    static func isDateDefault() -> FieldValidations {
-        [.isDateDefault()]
+    static var isDateDefault: FieldValidations {
+        [.isDateDefault]
     }
     
-    static func isNumberDefault() -> FieldValidations {
-        [.isNumberDefault()]
+    static var isNumberDefault: FieldValidations {
+        [.isNumberDefault]
     }
     
     static func maxLengthDefault(length: Int) -> FieldValidations {

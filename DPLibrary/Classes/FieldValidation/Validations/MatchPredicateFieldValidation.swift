@@ -2,11 +2,11 @@ import Foundation
 
 open class MatchPredicateFieldValidation: FieldValidation {
     
-    let format: String
+    public let format: String
     
-    public init(format: String, code: Int, message: String, mode: FieldValidation.Mode, required: Bool) {
+    public init(format: String, message: String, mode: FieldValidation.Mode, required: Bool) {
         self.format = format
-        super.init(code: code, message: message, mode: mode, required: required)
+        super.init(message: message, mode: mode, required: required)
     }
     
     open override func gotError(for value: Any?) -> Self? {

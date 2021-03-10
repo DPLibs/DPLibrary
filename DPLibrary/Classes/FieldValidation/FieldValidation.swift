@@ -17,7 +17,6 @@ open class FieldValidation: LocalizedError {
     }
     
     // MARk: - Props
-    public let code: Int
     public let message: String
     public let mode: Mode
     public let required: Bool
@@ -31,8 +30,7 @@ open class FieldValidation: LocalizedError {
     }
     
     // MARK:  -Init
-    public init(code: Int, message: String, mode: Mode, required: Bool) {
-        self.code = code
+    public init(message: String, mode: Mode, required: Bool) {
         self.message = message
         self.mode = mode
         self.required = required
@@ -68,74 +66,28 @@ open class FieldValidation: LocalizedError {
 // MARK: - FieldValidation + Store
 public extension FieldValidation {
     
-    enum CodeDefault: Int{
-        case isEmail = 1
-        case isDate = 2
-        case isNumber = 3
-        case maxLength = 4
-        case minLength = 5
-        case matchPredicate = 6
-        
-        public var code: Int {
-            self.rawValue
-        }
+    static var isEmailDefault: EmailFieldValidation {
+        .init(message: "Invalid email", mode: .afterFinish, required: true)
     }
     
-    static func isEmailDefault() -> EmailFieldValidation {
-        .init(
-            code: CodeDefault.isEmail.code,
-            message: "Invalid email",
-            mode: .afterFinish,
-            required: true
-        )
+    static var isDateDefault: DateFieldValidation {
+        .init(message: "Invalid date", mode: .afterFinish, required: true)
     }
     
-    static func isDateDefault() -> DateFieldValidation {
-        .init(
-            code: CodeDefault.isDate.code,
-            message: "Invalid date",
-            mode: .afterFinish,
-            required: true
-        )
-    }
-    
-    static func isNumberDefault() -> NumberFieldValidation {
-        .init(
-            code: CodeDefault.isNumber.code,
-            message: "Invalid number",
-            mode: .afterFinish,
-            required: true
-        )
+    static var isNumberDefault: NumberFieldValidation {
+        .init(message: "Invalid number", mode: .afterFinish, required: true)
     }
     
     static func maxLengthDefault(length: Int) -> MaxLengthFieldValidation {
-        .init(
-            length: length,
-            code: CodeDefault.maxLength.code,
-            message: "Max lenght must be \(length.description)",
-            mode: .any,
-            required: true
-        )
+        .init(length: length, message: "Max lenght must be \(length.description)", mode: .any, required: true)
     }
     
     static func minLengthDefault(length: Int) -> MinLengthFieldValidation {
-        .init(
-            length: length,
-            code: CodeDefault.minLength.code,
-            message: "Min lenght must be \(length.description)",
-            mode: .afterFinish,
-            required: true
-        )
+        .init(length: length, message: "Min lenght must be \(length.description)", mode: .afterFinish, required: true)
     }
     
     static func matchPredicate(format: String) -> MatchPredicateFieldValidation {
-        .init(
-            format: format,
-            code: CodeDefault.matchPredicate.code,
-            message: "Does not match the required format",
-            mode: .afterFinish,
-            required: true
-        )
+        .init(format: format, message: "Does not match the required format", mode: .afterFinish, required: true)
     }
     
 }
