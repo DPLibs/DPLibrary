@@ -1,7 +1,6 @@
 # DPLibrary
 
 [![CI Status](https://img.shields.io/travis/dmitriyap11/DPLibrary.svg?style=flat)](https://travis-ci.org/dmitriyap11/DPLibrary)
-[![CI Status](https://img.shields.io/travis/Dmitriy Polyakov/DPLibrary.svg?style=flat)](https://travis-ci.org/Dmitriy Polyakov/DPLibrary)
 [![Version](https://img.shields.io/cocoapods/v/DPLibrary.svg?style=flat)](https://cocoapods.org/pods/DPLibrary)
 [![License](https://img.shields.io/cocoapods/l/DPLibrary.svg?style=flat)](https://cocoapods.org/pods/DPLibrary)
 [![Platform](https://img.shields.io/cocoapods/p/DPLibrary.svg?style=flat)](https://cocoapods.org/pods/DPLibrary)
