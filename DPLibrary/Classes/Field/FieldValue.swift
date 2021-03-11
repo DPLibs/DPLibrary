@@ -13,11 +13,11 @@ open class FieldValue {
 // MARK: - FieldValue + Store
 public extension FieldValue {
     
-    static func text(text: String?, validations: FieldValidations) -> TextFieldValue {
+    static func text(_ text: String?, validations: FieldValidations) -> TextFieldValue {
         .init(text: text, validations: validations)
     }
     
-    static func date(date: Date?, validations: FieldValidations) -> DateFieldValue {
+    static func date(_ date: Date?, validations: FieldValidations) -> DateFieldValue {
         .init(date: date, validations: validations)
     }
     
