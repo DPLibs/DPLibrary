@@ -4,21 +4,9 @@ public typealias FieldValidations = [FieldValidation]
 
 public extension FieldValidations {
     
-    static var empty: FieldValidations {
-        []
-    }
-    
     func gotErrors(for value: Any?, with mode: FieldValidation.Mode) -> FieldValidations {
         let errors = self.map({ $0.gotError(for: value, with: mode) }).filter({ $0 != nil })
         return errors as? Self ?? .empty
-    }
-    
-    func isError(for value: Any?, with mode: FieldValidation.Mode) -> Bool {
-        !self.gotErrors(for: value, with: mode).isEmpty
-    }
-    
-    func isSuccess(for value: Any?, with mode: FieldValidation.Mode) -> Bool {
-        self.gotErrors(for: value, with: mode).isEmpty
     }
     
     func validateShouldChangeCharacters(text: String?, in range: NSRange, replacementString string: String) -> FieldValidations {

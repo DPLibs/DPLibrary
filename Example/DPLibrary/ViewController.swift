@@ -18,9 +18,6 @@ class ViewController: UIViewController {
         self._appVersionExamples()
         self._enviromentExamples()
         self._getScreenOffsetsExamples()
-        
-        let gg = DPStoredParameter<CGFloat>("gg", store: .Keychain)
-        gg.set(56)
     }
     
     // MARK: - Enums

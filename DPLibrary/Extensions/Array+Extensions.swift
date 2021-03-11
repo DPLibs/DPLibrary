@@ -9,6 +9,13 @@ import Foundation
 
 public extension Array {
     
+    /// Return empty array of elements.
+    /// - Returns: Empty array of elements.
+    ///
+    static var empty: Self {
+        []
+    }
+    
     // MARK: - Remove elements methods
     
     /// Return array with removing all elements at indices.
