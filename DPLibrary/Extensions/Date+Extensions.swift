@@ -142,5 +142,10 @@ public extension Date {
         Calendar.current.compare(self, to: date, toGranularity: .day) == .orderedAscending
     }
     
+    // TODO: - Comments, Readme
+    func getCompontent(_ compontent: Calendar.Component) -> Int {
+        Calendar.current.component(compontent, from: self)
+    }
+    
 }
 

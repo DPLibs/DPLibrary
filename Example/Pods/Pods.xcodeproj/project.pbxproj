@@ -129,6 +129,10 @@
 		E2BF543425DDC377009B300A /* NotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */; };
 		E2BF548525DF04F8009B300A /* DateFormatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF548425DF04F8009B300A /* DateFormatType.swift */; };
 		E2CFFC3225E82BB400B0FDB9 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */; };
+		E2FA26C9260280740092881E /* ViewControllerShowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26C8260280740092881E /* ViewControllerShowType.swift */; };
+		E2FA26D0260280F60092881E /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26CF260280F60092881E /* UITableViewCell+Extensions.swift */; };
+		E2FA26D72602816E0092881E /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26D62602816E0092881E /* Dictionary+Extensions.swift */; };
+		E2FA26DE260281A60092881E /* ViewState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26DD260281A60092881E /* ViewState.swift */; };
 		E8C2D4AA6B59D4ED06382EC5EC60CAC4 /* Source.swift in Sources */ = {isa = PBXBuildFile; fileRef = A07BD98D135702232DDA77960AECFAAB /* Source.swift */; };
 		E9DD64D06854D3AFAFB25B2DA57F5263 /* ImageDownloaderDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBD8BD0A40B38E59803465833CB71925 /* ImageDownloaderDelegate.swift */; };
 		EC60820674D7530E79FA1E2A83A160B1 /* Collection+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E596C54203DF0A3B2F46D482E13127C4 /* Collection+Extensions.swift */; };
@@ -354,6 +358,10 @@
 		E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extensions.swift"; sourceTree = "<group>"; };
 		E2BF548425DF04F8009B300A /* DateFormatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatType.swift; sourceTree = "<group>"; };
 		E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		E2FA26C8260280740092881E /* ViewControllerShowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerShowType.swift; sourceTree = "<group>"; };
+		E2FA26CF260280F60092881E /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
+		E2FA26D62602816E0092881E /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
+		E2FA26DD260281A60092881E /* ViewState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewState.swift; sourceTree = "<group>"; };
 		E4183FE55AA297139CA4B9BB1928C6DE /* Kingfisher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Kingfisher.swift; path = Sources/General/Kingfisher.swift; sourceTree = "<group>"; };
 		E596C54203DF0A3B2F46D482E13127C4 /* Collection+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Collection+Extensions.swift"; sourceTree = "<group>"; };
 		E7915C1D84ED3B213377B2BF12F27735 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Utility/Result.swift; sourceTree = "<group>"; };
@@ -491,6 +499,7 @@
 				11EA842B076E845A9565F96595A16D39 /* Array+Extensions.swift */,
 				E596C54203DF0A3B2F46D482E13127C4 /* Collection+Extensions.swift */,
 				C427FACAB81ECDE010C089CC732B4666 /* Date+Extensions.swift */,
+				E2FA26D62602816E0092881E /* Dictionary+Extensions.swift */,
 				8216C8A5162FCA9AD8178DFAF59611B1 /* Encodable+Extensions.swift */,
 				E2BCCC5625E5835600AC4822 /* FileManager+Extensions.swift */,
 				E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */,
@@ -504,6 +513,7 @@
 				E2BCCC5E25E5835600AC4822 /* UILabel+Extensions.swift */,
 				5729D9BDB82FD4609263A3AEA901A3C2 /* UIStackView+Extensions.swift */,
 				D81DCDA6BB00F00DC60EBBF89EEC9EC7 /* UITableView+Extensions.swift */,
+				E2FA26CF260280F60092881E /* UITableViewCell+Extensions.swift */,
 				E2BCCC5425E5835600AC4822 /* UITapGestureRecognizer+Extensions.swift */,
 				28D9C39A394DFF2A2F1315ABAA81C2F6 /* UIView+Extensions.swift */,
 				E2BCCC5C25E5835600AC4822 /* UIViewController+Extensions.swift */,
@@ -693,6 +703,8 @@
 				E2BCCC5525E5835600AC4822 /* Environment.swift */,
 				E2BCCC5B25E5835600AC4822 /* PlayState.swift */,
 				E25FFF6725E5905A008E4494 /* ScreenOffset.swift */,
+				E2FA26C8260280740092881E /* ViewControllerShowType.swift */,
+				E2FA26DD260281A60092881E /* ViewState.swift */,
 				E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */,
 			);
 			name = Enums;
@@ -1023,6 +1035,7 @@
 				E2BCCC6C25E5835600AC4822 /* CreateOrDefaultInitable.swift in Sources */,
 				E2BCCC9925E5840200AC4822 /* StyleWrapper+UIStackView.swift in Sources */,
 				E2BCCC9C25E5840200AC4822 /* StyleWrapper+UIImageView.swift in Sources */,
+				E2FA26C9260280740092881E /* ViewControllerShowType.swift in Sources */,
 				EC60820674D7530E79FA1E2A83A160B1 /* Collection+Extensions.swift in Sources */,
 				DB1023359956EB7FDC6C5AEDB236D2B5 /* Date+Extensions.swift in Sources */,
 				E2BCCC7025E5835600AC4822 /* UIViewController+Extensions.swift in Sources */,
@@ -1035,6 +1048,7 @@
 				32D18EBD5AEDC0DBC465E2786585F99F /* Encodable+Extensions.swift in Sources */,
 				E2BCCC9825E5840200AC4822 /* Stylable.swift in Sources */,
 				E2BCCC9F25E5840200AC4822 /* StyleWrapper+UITextField.swift in Sources */,
+				E2FA26DE260281A60092881E /* ViewState.swift in Sources */,
 				E2BCCC6625E5835600AC4822 /* AppServerConfiguration.swift in Sources */,
 				1C56825F5D66A7A2F8F30423BA07A91A /* NSMutableAttributedString+Extensions.swift in Sources */,
 				739A3A9AEF9C25D63D0AA756CF7F0FAC /* String+Extensions.swift in Sources */,
@@ -1044,6 +1058,7 @@
 				E2BCCC6A25E5835600AC4822 /* Environment.swift in Sources */,
 				E2BCCC9D25E5840200AC4822 /* StyleWrapper+UIActivityIndicatorView.swift in Sources */,
 				E2BCCC6D25E5835600AC4822 /* Time.swift in Sources */,
+				E2FA26D0260280F60092881E /* UITableViewCell+Extensions.swift in Sources */,
 				E2BCCC9525E5840200AC4822 /* StyleWrapper+UISearchBar.swift in Sources */,
 				931214ED4B6EBE6842748DE5BFF3D99B /* UIApplication+Extensions.swift in Sources */,
 				E2BCCC6825E5835600AC4822 /* Distance.swift in Sources */,
@@ -1057,6 +1072,7 @@
 				E2BCCC6F25E5835600AC4822 /* PlayState.swift in Sources */,
 				E2BCCC9625E5840200AC4822 /* StyleWrapper+UIView.swift in Sources */,
 				E2BCCC6B25E5835600AC4822 /* FileManager+Extensions.swift in Sources */,
+				E2FA26D72602816E0092881E /* Dictionary+Extensions.swift in Sources */,
 				E2BCCC7425E5835600AC4822 /* NumberAdduction.swift in Sources */,
 				566DC177BD9F50321C897EC4D1485740 /* UICollectionView+Extensions.swift in Sources */,
 				8A02E5236622F215D552791413F80234 /* UIImage+Extensions.swift in Sources */,
