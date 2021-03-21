@@ -126,6 +126,7 @@
 		E2BF543425DDC377009B300A /* NotificationCenter+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */; };
 		E2BF548525DF04F8009B300A /* DateFormatType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BF548425DF04F8009B300A /* DateFormatType.swift */; };
 		E2CFFC3225E82BB400B0FDB9 /* WeekDay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */; };
+		E2D370332607A342005F60DF /* Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2D370322607A342005F60DF /* Handlers.swift */; };
 		E2FA26C9260280740092881E /* ViewControllerShowType.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26C8260280740092881E /* ViewControllerShowType.swift */; };
 		E2FA26D0260280F60092881E /* UITableViewCell+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26CF260280F60092881E /* UITableViewCell+Extensions.swift */; };
 		E2FA26D72602816E0092881E /* Dictionary+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2FA26D62602816E0092881E /* Dictionary+Extensions.swift */; };
@@ -352,6 +353,7 @@
 		E2BF543325DDC377009B300A /* NotificationCenter+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NotificationCenter+Extensions.swift"; sourceTree = "<group>"; };
 		E2BF548425DF04F8009B300A /* DateFormatType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatType.swift; sourceTree = "<group>"; };
 		E2CFFC3125E82BB400B0FDB9 /* WeekDay.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeekDay.swift; sourceTree = "<group>"; };
+		E2D370322607A342005F60DF /* Handlers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Handlers.swift; sourceTree = "<group>"; };
 		E2FA26C8260280740092881E /* ViewControllerShowType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerShowType.swift; sourceTree = "<group>"; };
 		E2FA26CF260280F60092881E /* UITableViewCell+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extensions.swift"; sourceTree = "<group>"; };
 		E2FA26D62602816E0092881E /* Dictionary+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Dictionary+Extensions.swift"; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 				E2BF548425DF04F8009B300A /* DateFormatType.swift */,
 				E2BCCC5325E5835600AC4822 /* Distance.swift */,
 				E2BCCC6525E5835600AC4822 /* DPStoredParameter.swift */,
+				E2D370322607A342005F60DF /* Handlers.swift */,
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
 				E2BCCC5825E5835600AC4822 /* Time.swift */,
 				E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */,
@@ -1057,6 +1060,7 @@
 				E2BCCC7425E5835600AC4822 /* NumberAdduction.swift in Sources */,
 				566DC177BD9F50321C897EC4D1485740 /* UICollectionView+Extensions.swift in Sources */,
 				8A02E5236622F215D552791413F80234 /* UIImage+Extensions.swift in Sources */,
+				E2D370332607A342005F60DF /* Handlers.swift in Sources */,
 				E2BCCC9B25E5840200AC4822 /* StyleWrapper+UIButton.swift in Sources */,
 				2F251D146B40BF1D88DE8427909D08E4 /* UIStackView+Extensions.swift in Sources */,
 				18CD4103201482860540B6BC36ADBC28 /* UITableView+Extensions.swift in Sources */,

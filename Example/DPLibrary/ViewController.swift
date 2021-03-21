@@ -18,11 +18,6 @@ class ViewController: UIViewController {
         self._appVersionExamples()
         self._enviromentExamples()
         self._getScreenOffsetsExamples()
-        
-        let form = TestFieldsForm(test1: .init(validations: .isEmailDefault, value: "1"), test2: .init(validations: .empty, value: 2))
-        form.begin()
-        form.setupData(.init(test1: "3", test2: 4))
-        form.begin()
     }
     
     // MARK: - Enums
