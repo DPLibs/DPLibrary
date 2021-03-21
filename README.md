@@ -34,7 +34,6 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 [**ImageModel**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/ImageModel.swift) - struct for defining the image.<br/>
 [**Time**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Time.swift) - struct for determining the time.<br/>
 [**TimeUnit**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/TimeUnit.swift) - struct for determining the time interval unit.<br/>
-[**Field**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Field)<br/>
 
 ### Enums
 
