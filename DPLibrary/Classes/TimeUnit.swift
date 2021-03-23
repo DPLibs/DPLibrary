@@ -75,6 +75,11 @@ public struct TimeUnit: Comparable, Equatable {
 // MARK: - TimeUnit + Store
 public extension TimeUnit {
     
+    // TODO: - Comments
+    static var zero: TimeUnit {
+        .init(milliseconds: .zero)
+    }
+    
     /// Create  from milliseconds value.
     /// - Parameter milliseconds - Milliseconds value.
     ///

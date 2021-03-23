@@ -2,16 +2,17 @@ import Foundation
 
 public extension Date {
     
-    // MARK: - Create methods
-    
-    /// Return date created from timeIntervalSince1970 in miliseconds or nil.
-    /// - Parameter interval: timeIntervalSince1970 in miliseconds.
-    /// - Returns: Created date.
-    ///
-    static func createFromTimeIntervalSince1970InMiliseconds(_ interval: Int?) -> Date? {
-        guard let interval = interval else { return nil }
-        return Date(timeIntervalSince1970: TimeInterval(interval) / 1000)
-    }
+    // TODO: - Remove
+//    // MARK: - Create methods
+//
+//    /// Return date created from timeIntervalSince1970 in miliseconds or nil.
+//    /// - Parameter interval: timeIntervalSince1970 in miliseconds.
+//    /// - Returns: Created date.
+//    ///
+//    static func createFromTimeIntervalSince1970InMiliseconds(_ interval: Int?) -> Date? {
+//        guard let interval = interval else { return nil }
+//        return Date(timeIntervalSince1970: TimeInterval(interval) / 1000)
+//    }
     
     // MARK: - Add methods
     
