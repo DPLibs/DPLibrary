@@ -87,6 +87,7 @@
 		D9CD6A2615E781A94D4AC08EE4BD03D9 /* ImageView+Kingfisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 542720ECCE518F1AE7C4E31E2670A6F6 /* ImageView+Kingfisher.swift */; };
 		DB1023359956EB7FDC6C5AEDB236D2B5 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = C427FACAB81ECDE010C089CC732B4666 /* Date+Extensions.swift */; };
 		E25FFF6825E5905A008E4494 /* ScreenOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FFF6725E5905A008E4494 /* ScreenOffset.swift */; };
+		E28DD14A260A60BB003F9AA0 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28DD149260A60BB003F9AA0 /* TimeStamp.swift */; };
 		E2BCCC6625E5835600AC4822 /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */; };
 		E2BCCC6725E5835600AC4822 /* AppVersion.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5225E5835600AC4822 /* AppVersion.swift */; };
 		E2BCCC6825E5835600AC4822 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5325E5835600AC4822 /* Distance.swift */; };
@@ -314,6 +315,7 @@
 		E040603F3364EE814DA0C394B66B1460 /* UIApplication+Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extensions.swift"; sourceTree = "<group>"; };
 		E229747460993A5FC643F2BA8D6017E2 /* Pods_DPLibrary_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DPLibrary_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E25FFF6725E5905A008E4494 /* ScreenOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOffset.swift; sourceTree = "<group>"; };
+		E28DD149260A60BB003F9AA0 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServerConfiguration.swift; sourceTree = "<group>"; };
 		E2BCCC5225E5835600AC4822 /* AppVersion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppVersion.swift; sourceTree = "<group>"; };
 		E2BCCC5325E5835600AC4822 /* Distance.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
@@ -529,6 +531,7 @@
 				E2D370322607A342005F60DF /* Handlers.swift */,
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
 				E2BCCC5825E5835600AC4822 /* Time.swift */,
+				E28DD149260A60BB003F9AA0 /* TimeStamp.swift */,
 				E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */,
 				E2BCCC8325E5840100AC4822 /* StyleWrapper */,
 			);
@@ -1036,6 +1039,7 @@
 				E2BCCC6625E5835600AC4822 /* AppServerConfiguration.swift in Sources */,
 				1C56825F5D66A7A2F8F30423BA07A91A /* NSMutableAttributedString+Extensions.swift in Sources */,
 				739A3A9AEF9C25D63D0AA756CF7F0FAC /* String+Extensions.swift in Sources */,
+				E28DD14A260A60BB003F9AA0 /* TimeStamp.swift in Sources */,
 				E2BCCC7825E5835600AC4822 /* DPStoredParameter.swift in Sources */,
 				E2BCCC7625E5835600AC4822 /* DPLoggable.swift in Sources */,
 				E2BCCC9E25E5840200AC4822 /* StyleWrapper+UIScrollView.swift in Sources */,

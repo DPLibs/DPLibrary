@@ -45,6 +45,7 @@ public struct Distance: Comparable, Equatable {
     }
 }
 
+// MARK: - Distance + Store
 public extension Distance {
     
     /// Create  from metters value.
