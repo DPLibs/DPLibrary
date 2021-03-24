@@ -2,18 +2,6 @@ import Foundation
 
 public extension Date {
     
-    // TODO: - Remove
-//    // MARK: - Create methods
-//
-//    /// Return date created from timeIntervalSince1970 in miliseconds or nil.
-//    /// - Parameter interval: timeIntervalSince1970 in miliseconds.
-//    /// - Returns: Created date.
-//    ///
-//    static func createFromTimeIntervalSince1970InMiliseconds(_ interval: Int?) -> Date? {
-//        guard let interval = interval else { return nil }
-//        return Date(timeIntervalSince1970: TimeInterval(interval) / 1000)
-//    }
-    
     // MARK: - Add methods
     
     /// Return date with adding dateComponent value.
@@ -150,3 +138,19 @@ public extension Date {
     
 }
 
+// MARK: - Date + TimeStructAdduction
+extension Date: TimeStructAdduction {
+    
+    public var toDate: Date {
+        self
+    }
+    
+    public var toTimeStamp: TimeStamp {
+        .init(seconds: self.timeIntervalSince1970)
+    }
+    
+    public var toTimeUnit: TimeUnit {
+        .init(seconds: self.timeIntervalSince1970)
+    }
+    
+}
