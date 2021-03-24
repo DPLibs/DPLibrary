@@ -2,7 +2,7 @@ import Foundation
 
 /// Struct for defining the distance.
 ///
-public struct Distance: Comparable, Equatable {
+public struct Distance {
     
     // MARK: - Props
     
@@ -32,17 +32,6 @@ public struct Distance: Comparable, Equatable {
         self.kilometters = kilometters
     }
     
-    // MARK: - Comparable
-    public static func < (lhs: Distance, rhs: Distance) -> Bool {
-        lhs.metters < rhs.metters &&
-        lhs.kilometters < rhs.kilometters
-    }
-    
-    // MARK: - Equatable
-    public static func == (lhs: Distance, rhs: Distance) -> Bool {
-        lhs.metters == rhs.metters &&
-        lhs.kilometters == rhs.kilometters
-    }
 }
 
 // MARK: - Distance + Store
@@ -60,6 +49,26 @@ public extension Distance {
     ///
     static func kilometters(_ value: Float) -> Distance {
         .init(kilometters: value)
+    }
+    
+}
+
+// MARK: - Distance + Equatable
+extension Distance: Equatable {
+    
+    public static func == (lhs: Distance, rhs: Distance) -> Bool {
+        lhs.metters == rhs.metters &&
+        lhs.kilometters == rhs.kilometters
+    }
+    
+}
+
+// MARK: - Distance + Equatable
+extension Distance: Comparable {
+    
+    public static func < (lhs: Distance, rhs: Distance) -> Bool {
+        lhs.metters < rhs.metters &&
+        lhs.kilometters < rhs.kilometters
     }
     
 }

@@ -2,7 +2,7 @@ import Foundation
 
 /// Struct for determining the time interval unit.
 ///
-public struct TimeUnit: Comparable, Equatable {
+public struct TimeUnit {
     
     // MARK: - Props
     
@@ -54,8 +54,24 @@ public struct TimeUnit: Comparable, Equatable {
     public init(hours: Double) {
         self.init(milliseconds: hours * 60 * 60 * 1000)
     }
+    
+}
 
-    // MARK: - Comparable
+// MARK: - TimeUnit + Equatable
+extension TimeUnit: Equatable {
+    
+    public static func == (lhs: TimeUnit, rhs: TimeUnit) -> Bool {
+        lhs.milliseconds == rhs.milliseconds &&
+        lhs.seconds == rhs.seconds &&
+        lhs.minutes == rhs.minutes &&
+        lhs.hours == rhs.hours
+    }
+    
+}
+
+// MARK: - TimeUnit + Comparable
+extension TimeUnit: Comparable {
+    
     public static func < (lhs: TimeUnit, rhs: TimeUnit) -> Bool {
         lhs.milliseconds < rhs.milliseconds &&
         lhs.seconds < rhs.seconds &&
@@ -63,49 +79,77 @@ public struct TimeUnit: Comparable, Equatable {
         lhs.hours < rhs.hours
     }
     
-    // MARK: - Equatable
-    public static func == (lhs: TimeUnit, rhs: TimeUnit) -> Bool {
-        lhs.milliseconds == rhs.milliseconds &&
-        lhs.seconds == rhs.seconds &&
-        lhs.minutes == rhs.minutes &&
-        lhs.hours == rhs.hours
-    }
 }
 
-// MARK: - TimeUnit + Store
-public extension TimeUnit {
+// MARK: - TimeUnit + TimeStructAdduction
+extension TimeUnit: TimeStructAdduction {
     
-    // TODO: - Comments
-    static var zero: TimeUnit {
+    public var toDate: Date {
+        .init(timeIntervalSince1970: self.seconds)
+    }
+    
+    public var toTimeStamp: TimeStamp {
+        .init(milliseconds: self.milliseconds)
+    }
+    
+    public var toTimeUnit: TimeUnit {
+        self
+    }
+    
+}
+
+// MARK: - TimeUnit + MathProtocol
+extension TimeUnit: ZeroAdduction {
+    
+    public var zero: TimeUnit {
         .init(milliseconds: .zero)
     }
     
-    /// Create  from milliseconds value.
-    /// - Parameter milliseconds - Milliseconds value.
-    ///
-    static func milliseconds(_ milliseconds: Double) -> TimeUnit {
-        .init(milliseconds: milliseconds)
-    }
+}
 
-    /// Create  from seconds value.
-    /// - Parameter seconds - Seconds value.
-    ///
-    static func seconds(_ seconds: Double) -> TimeUnit {
-        .init(seconds: seconds)
+// MARK: - TimeUnit + Mathematicable
+extension TimeUnit: Mathematicable {
+    
+    prefix public static func - (x: Self) -> Self {
+        .init(milliseconds: -x.milliseconds)
     }
-
-    /// Create  from minutes value.
-    /// - Parameter minutes - Minutes value.
-    ///
-    static func minutes(_ minutes: Double) -> TimeUnit {
-        .init(minutes: minutes)
+    
+    prefix public static func + (x: Self) -> Self {
+        .init(milliseconds: +x.milliseconds)
     }
+    
+    
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds + rhs.milliseconds)
+    }
+    
+    public static func - (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds - rhs.milliseconds)
+    }
+    
+    public static func * (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds * rhs.milliseconds)
+    }
+    
+    public static func / (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds / rhs.milliseconds)
+    }
+    
 
-    /// Create  from hours value.
-    /// - Parameter hours - Hours value.
-    ///
-    static func hours(_ hours: Double) -> TimeUnit {
-        .init(hours: hours)
+    public static func += (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds + rhs.milliseconds)
+    }
+    
+    public static func -= (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds - rhs.milliseconds)
+    }
+    
+    public static func *= (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds * rhs.milliseconds)
+    }
+    
+    public static func /= (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds / rhs.milliseconds)
     }
     
 }

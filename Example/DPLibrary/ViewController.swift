@@ -14,10 +14,27 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // MARK: - Classes
+        self._timeUnitExamples()
+        
         // MARK: - Enums
         self._appVersionExamples()
         self._enviromentExamples()
         self._getScreenOffsetsExamples()
+    }
+    
+    // MARK: - Classes
+    private func _timeUnitExamples() {
+        let timeUnit1 = TimeUnit(hours: 2.5)
+        let timeUnit2 = TimeUnit(hours: 3)
+        let sum = timeUnit1 + timeUnit2
+        
+        print("TimeUnit")
+        print("TimeUnit(hours: 2.5):", timeUnit1)
+        print("+ TimeUnit(hours: 3):", sum)
+        print("-:", -sum)
+        
+        print("\n")
     }
     
     // MARK: - Enums
