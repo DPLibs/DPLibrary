@@ -15,6 +15,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         // MARK: - Classes
+        self._distanceExamples()
         self._timeUnitExamples()
         
         // MARK: - Enums
@@ -29,7 +30,7 @@ class ViewController: UIViewController {
         let timeUnit2 = TimeUnit(hours: 3)
         let sum = timeUnit1 + timeUnit2
         
-        print("TimeUnit")
+        print("*** TimeUnit ***")
         print("TimeUnit(hours: 2.5):", timeUnit1)
         print("+ TimeUnit(hours: 3):", sum)
         print("-:", -sum)
@@ -37,9 +38,21 @@ class ViewController: UIViewController {
         print("\n")
     }
     
+    private func _distanceExamples() {
+        let distance = Distance(millimeters: 200000)
+        
+        print("*** Distance ***")
+        print("millimeters:", distance.millimeters)
+        print("centimeters:", distance.centimeters)
+        print("metters:", distance.metters)
+        print("kilometters:", distance.kilometters)
+        print("miles:", distance.miles)
+        print("\n")
+    }
+    
     // MARK: - Enums
     private func _appVersionExamples() {
-        print("AppVersion")
+        print("*** AppVersion ***")
         print("full:", AppVersion.full ?? "nil")
         print("short:", AppVersion.short ?? "nil")
         print("buildNumber:", AppVersion.buildNumber ?? "nil")
@@ -47,13 +60,13 @@ class ViewController: UIViewController {
     }
     
     private func _enviromentExamples() {
-        print("Enviroment")
+        print("*** Enviroment ***")
         print("current:", Environment.current)
         print("\n")
     }
     
     private func _getScreenOffsetsExamples() {
-        print("GetScreenOffsets")
+        print("*** GetScreenOffsets ***")
         print("HeightNavigationBar:", self.getScreenOffsets(.heightNavigationBar))
         print("HeightStatusBar:", self.getScreenOffsets(.heightStatusBar))
         print("HeightTabBar:", self.getScreenOffsets(.heightTabBar))

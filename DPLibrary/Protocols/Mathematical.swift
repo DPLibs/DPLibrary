@@ -1,7 +1,7 @@
 import Foundation
 
 // TODO: - Comments, Readme
-public protocol Mathematicable {
+public protocol Mathematical {
     prefix static func - (x: Self) -> Self
     prefix static func + (x: Self) -> Self
     

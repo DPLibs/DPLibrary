@@ -34,21 +34,69 @@ public struct Angle {
     }
 }
 
-// MARK: - Angle + Store
-public extension Angle {
+// MARK: - Angle + Equatable
+extension Angle: Equatable {
     
-    /// Create  from degrees value.
-    /// - Parameter degrees - Degrees value.
-    ///
-    static func degrees(_ degrees: CGFloat) -> Angle {
-        .init(degrees: degrees)
+    public static func == (lhs: Self, rhs: Self) -> Bool {
+        lhs.degrees == rhs.degrees &&
+        lhs.radians == rhs.radians
     }
     
-    /// Create  from radians value.
-    /// - Parameter radians - Radians value.
-    ///
-    static func radians(_ radians: CGFloat) -> Angle {
-        .init(radians: radians)
+}
+
+// MARK: - Angle + Comparable
+extension Angle: Comparable {
+    
+    public static func < (lhs: Self, rhs: Self) -> Bool {
+        lhs.degrees < rhs.degrees &&
+        lhs.radians < rhs.radians
+    }
+    
+}
+
+// MARK: - Angle + Mathematical
+extension Angle: Mathematical {
+    
+    prefix public static func - (x: Self) -> Self {
+        .init(degrees: -x.degrees)
+    }
+    
+    prefix public static func + (x: Self) -> Self {
+        .init(degrees: +x.degrees)
+    }
+    
+    
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        .init(degrees: lhs.degrees + rhs.degrees)
+    }
+    
+    public static func - (lhs: Self, rhs: Self) -> Self {
+        .init(degrees: lhs.degrees - rhs.degrees)
+    }
+    
+    public static func * (lhs: Self, rhs: Self) -> Self {
+        .init(degrees: lhs.degrees * rhs.degrees)
+    }
+    
+    public static func / (lhs: Self, rhs: Self) -> Self {
+        .init(degrees: lhs.degrees / rhs.degrees)
+    }
+    
+
+    public static func += (lhs: inout Self, rhs: Self) {
+        lhs = .init(degrees: lhs.degrees + rhs.degrees)
+    }
+    
+    public static func -= (lhs: inout Self, rhs: Self) {
+        lhs = .init(degrees: lhs.degrees - rhs.degrees)
+    }
+    
+    public static func *= (lhs: inout Self, rhs: Self) {
+        lhs = .init(degrees: lhs.degrees * rhs.degrees)
+    }
+    
+    public static func /= (lhs: inout Self, rhs: Self) {
+        lhs = .init(degrees: lhs.degrees / rhs.degrees)
     }
     
 }

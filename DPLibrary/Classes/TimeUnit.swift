@@ -60,7 +60,7 @@ public struct TimeUnit {
 // MARK: - TimeUnit + Equatable
 extension TimeUnit: Equatable {
     
-    public static func == (lhs: TimeUnit, rhs: TimeUnit) -> Bool {
+    public static func == (lhs: Self, rhs: Self) -> Bool {
         lhs.milliseconds == rhs.milliseconds &&
         lhs.seconds == rhs.seconds &&
         lhs.minutes == rhs.minutes &&
@@ -72,7 +72,7 @@ extension TimeUnit: Equatable {
 // MARK: - TimeUnit + Comparable
 extension TimeUnit: Comparable {
     
-    public static func < (lhs: TimeUnit, rhs: TimeUnit) -> Bool {
+    public static func < (lhs: Self, rhs: Self) -> Bool {
         lhs.milliseconds < rhs.milliseconds &&
         lhs.seconds < rhs.seconds &&
         lhs.minutes < rhs.minutes &&
@@ -101,14 +101,14 @@ extension TimeUnit: TimeStructAdduction {
 // MARK: - TimeUnit + MathProtocol
 extension TimeUnit: ZeroAdduction {
     
-    public var zero: TimeUnit {
+    static public var zero: TimeUnit {
         .init(milliseconds: .zero)
     }
     
 }
 
-// MARK: - TimeUnit + Mathematicable
-extension TimeUnit: Mathematicable {
+// MARK: - TimeUnit + Mathematical
+extension TimeUnit: Mathematical {
     
     prefix public static func - (x: Self) -> Self {
         .init(milliseconds: -x.milliseconds)

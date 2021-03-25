@@ -19,13 +19,21 @@ public struct TimeStamp {
     }
     
     public init(seconds: Double) {
-        self.milliseconds = seconds * 1000
-        self.seconds = seconds
+        self.init(milliseconds: seconds * 1000)
     }
     
     public init?(secondsOptional: Double?) {
         guard let seconds = secondsOptional else { return nil }
         self.init(seconds: seconds)
+    }
+    
+    public init(date: Date) {
+        self.init(seconds: date.timeIntervalSince1970)
+    }
+    
+    public init?(dateOptional: Date?) {
+        guard let date = dateOptional else { return nil }
+        self.init(date: date)
     }
 }
 
@@ -71,7 +79,7 @@ extension TimeStamp: Comparable {
 // MARK: - TimeStamp + ZeroAdduction
 extension TimeStamp: ZeroAdduction {
     
-    public var zero: TimeStamp {
+    static public var zero: TimeStamp {
         .init(milliseconds: .zero)
     }
     
@@ -90,6 +98,53 @@ extension TimeStamp: TimeStructAdduction {
     
     public var toTimeUnit: TimeUnit {
         .init(milliseconds: self.milliseconds)
+    }
+    
+}
+
+// MARK: - TimeStamp + Mathematical
+extension TimeStamp: Mathematical {
+    
+    prefix public static func - (x: Self) -> Self {
+        .init(milliseconds: -x.milliseconds)
+    }
+    
+    prefix public static func + (x: Self) -> Self {
+        .init(milliseconds: +x.milliseconds)
+    }
+    
+    
+    public static func + (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds + rhs.milliseconds)
+    }
+    
+    public static func - (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds - rhs.milliseconds)
+    }
+    
+    public static func * (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds * rhs.milliseconds)
+    }
+    
+    public static func / (lhs: Self, rhs: Self) -> Self {
+        .init(milliseconds: lhs.milliseconds / rhs.milliseconds)
+    }
+    
+
+    public static func += (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds + rhs.milliseconds)
+    }
+    
+    public static func -= (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds - rhs.milliseconds)
+    }
+    
+    public static func *= (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds * rhs.milliseconds)
+    }
+    
+    public static func /= (lhs: inout Self, rhs: Self) {
+        lhs = .init(milliseconds: lhs.milliseconds / rhs.milliseconds)
     }
     
 }
