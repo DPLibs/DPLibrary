@@ -89,7 +89,8 @@
 		E245ABD6260BD93F0008FC15 /* DateAdduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245ABD5260BD93F0008FC15 /* DateAdduction.swift */; };
 		E245ABE2260BDD560008FC15 /* ZeroAdduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245ABE1260BDD560008FC15 /* ZeroAdduction.swift */; };
 		E245ABEE260BDFEF0008FC15 /* TimeStructAdduction.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245ABED260BDFEF0008FC15 /* TimeStructAdduction.swift */; };
-		E245ABFA260BEA130008FC15 /* Mathematicable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245ABF9260BEA130008FC15 /* Mathematicable.swift */; };
+		E245ABFA260BEA130008FC15 /* Mathematical.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245ABF9260BEA130008FC15 /* Mathematical.swift */; };
+		E245AC15260D1D980008FC15 /* JsonCreatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = E245AC14260D1D980008FC15 /* JsonCreatable.swift */; };
 		E25FFF6825E5905A008E4494 /* ScreenOffset.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25FFF6725E5905A008E4494 /* ScreenOffset.swift */; };
 		E28DD14A260A60BB003F9AA0 /* TimeStamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28DD149260A60BB003F9AA0 /* TimeStamp.swift */; };
 		E2BCCC6625E5835600AC4822 /* AppServerConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */; };
@@ -321,7 +322,8 @@
 		E245ABD5260BD93F0008FC15 /* DateAdduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateAdduction.swift; sourceTree = "<group>"; };
 		E245ABE1260BDD560008FC15 /* ZeroAdduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZeroAdduction.swift; sourceTree = "<group>"; };
 		E245ABED260BDFEF0008FC15 /* TimeStructAdduction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStructAdduction.swift; sourceTree = "<group>"; };
-		E245ABF9260BEA130008FC15 /* Mathematicable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mathematicable.swift; sourceTree = "<group>"; };
+		E245ABF9260BEA130008FC15 /* Mathematical.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mathematical.swift; sourceTree = "<group>"; };
+		E245AC14260D1D980008FC15 /* JsonCreatable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonCreatable.swift; sourceTree = "<group>"; };
 		E25FFF6725E5905A008E4494 /* ScreenOffset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenOffset.swift; sourceTree = "<group>"; };
 		E28DD149260A60BB003F9AA0 /* TimeStamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeStamp.swift; sourceTree = "<group>"; };
 		E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppServerConfiguration.swift; sourceTree = "<group>"; };
@@ -641,7 +643,8 @@
 				E2BCCC5725E5835600AC4822 /* CreateOrDefaultInitable.swift */,
 				E245ABD5260BD93F0008FC15 /* DateAdduction.swift */,
 				E2BCCC6325E5835600AC4822 /* DPLoggable.swift */,
-				E245ABF9260BEA130008FC15 /* Mathematicable.swift */,
+				E245AC14260D1D980008FC15 /* JsonCreatable.swift */,
+				E245ABF9260BEA130008FC15 /* Mathematical.swift */,
 				E245ABED260BDFEF0008FC15 /* TimeStructAdduction.swift */,
 				E245ABE1260BDD560008FC15 /* ZeroAdduction.swift */,
 				E2BCCC6025E5835600AC4822 /* NumberAdduction */,
@@ -1025,7 +1028,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E245ABFA260BEA130008FC15 /* Mathematicable.swift in Sources */,
+				E245ABFA260BEA130008FC15 /* Mathematical.swift in Sources */,
 				E2CFFC3225E82BB400B0FDB9 /* WeekDay.swift in Sources */,
 				E2BCCCA425E5840200AC4822 /* StyleWrapper+UITableCell.swift in Sources */,
 				E2BCCC7225E5835600AC4822 /* UILabel+Extensions.swift in Sources */,
@@ -1043,6 +1046,7 @@
 				E2BCCCA325E5840200AC4822 /* StyleWrapper+UILabel.swift in Sources */,
 				9F14B4731D62867F67332BD586B42120 /* DPLibrary-dummy.m in Sources */,
 				E2BF548525DF04F8009B300A /* DateFormatType.swift in Sources */,
+				E245AC15260D1D980008FC15 /* JsonCreatable.swift in Sources */,
 				E2BCCCA225E5840200AC4822 /* StyleWrapper.swift in Sources */,
 				E2BF543425DDC377009B300A /* NotificationCenter+Extensions.swift in Sources */,
 				32D18EBD5AEDC0DBC465E2786585F99F /* Encodable+Extensions.swift in Sources */,

@@ -2,5 +2,5 @@ import Foundation
 
 // TODO: - Comments, Readme
 public protocol ZeroAdduction {
-    var zero: Self { get }
+    static var zero: Self { get }
 }

@@ -71,7 +71,7 @@ extension Time: Comparable {
 // MARK: - Time + ZeroAdduction
 extension Time: ZeroAdduction {
     
-    public var zero: Time {
+    static public var zero: Time {
         .init(hours: .zero, minutes: .zero, seconds: .zero, milliseconds: .zero)
     }
 

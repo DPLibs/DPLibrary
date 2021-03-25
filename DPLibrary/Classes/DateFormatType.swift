@@ -53,6 +53,13 @@ public extension DateFormatType {
     ///     print(date.toLocalString(withFormat: .weekDayWordsShort)) // пн
     ///
     static let weekDayWordsShort = DateFormatType("eee")
+    
+    /// Constant DateFormatType("hh:mm"). Example: 22:37.
+    ///
+    ///     let date = Date()
+    ///     print(date.toLocalString(withFormat: .time)) // 22:37
+    ///
+    static let time = DateFormatType("hh:mm")
 }
 
 // MARK: - DateFormatter + DateFormatType
