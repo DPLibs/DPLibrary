@@ -1,8 +1,15 @@
 import Foundation
 
-// TODO: - Comments, Readme
+/// Protocol for converting to `Date`.
+///
 public protocol DateAdduction {
+    
+    /// Returns the date assuming that `Self` is in `seconds`.
+    ///
     var toDateAsSeconds: Date { get }
+    
+    /// Returns the date assuming that `Self` is in `milliseconds`.
+    ///
     var toDateAsMilliseconds: Date { get }
 }
 

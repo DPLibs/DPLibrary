@@ -1,36 +1,62 @@
 import Foundation
 
-// TODO: - Readme, Comments
+/// Struct for determining the timeStamp.
+///
 public struct TimeStamp {
     
     // MARK: - Props
+    
+    /// Milliseconds value.
+    ///
     public let milliseconds: Double
+    
+    /// Seconds value.
+    ///
     public let seconds: Double
     
     // MARK: - Init
+    
+    /// Initialize  from milliseconds value.
+    /// - Parameter milliseconds - Milliseconds value.
+    ///
     public init(milliseconds: Double) {
         self.milliseconds = milliseconds
         self.seconds = milliseconds / 1000
     }
     
+    /// Initialize  from milliseconds optional value.
+    /// - Parameter millisecondsOptional - Milliseconds optional value.
+    ///
     public init?(millisecondsOptional: Double?) {
         guard let milliseconds = millisecondsOptional else { return nil }
         self.init(milliseconds: milliseconds)
     }
     
+    /// Initialize  from seconds value.
+    /// - Parameter seconds - Seconds value.
+    ///
     public init(seconds: Double) {
         self.init(milliseconds: seconds * 1000)
     }
     
+    /// Initialize  from seconds optional value.
+    /// - Parameter secondsOptional - Seconds optional value.
+    ///
     public init?(secondsOptional: Double?) {
         guard let seconds = secondsOptional else { return nil }
         self.init(seconds: seconds)
     }
     
+    /// Initialize  from date value.
+    /// - Parameter date - Date optional value.
+    ///
     public init(date: Date) {
         self.init(seconds: date.timeIntervalSince1970)
     }
     
+    /// Initialize  from dateOptional value.
+    /// - Parameter dateOptional - Date optional optional value.
+    ///
     public init?(dateOptional: Date?) {
         guard let date = dateOptional else { return nil }
         self.init(date: date)

@@ -1,6 +1,7 @@
 import Foundation
 
-// TODO: - Comments, Readme
+/// Protocol for the implementation of mathematical operations.
+///
 public protocol Mathematical {
     prefix static func - (x: Self) -> Self
     prefix static func + (x: Self) -> Self

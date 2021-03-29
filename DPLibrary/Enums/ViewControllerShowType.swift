@@ -1,7 +1,14 @@
 import Foundation
 
-// TODO: - Comments, Readme
+/// Enum for determining the ViewController show type.
+///
 public enum ViewControllerShowType {
+    
+    /// Present.
+    ///
     case present
+    
+    /// Push.
+    ///
     case push
 }
