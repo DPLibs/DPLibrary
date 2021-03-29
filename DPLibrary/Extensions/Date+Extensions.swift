@@ -99,7 +99,7 @@ public extension Date {
     }
     
     /// Returns all dates of the days of the current month.
-    /// - Returns: Dates of the days of the current month .
+    /// - Returns: Dates of the days of the current month.
     ///
     func getMonthDates() -> [Date] {
         guard let range = Calendar.current.range(of: .day, in: .month, for: self), var day = self.firstDateOfMonth else { return [] }
@@ -111,6 +111,14 @@ public extension Date {
         }
         
         return days
+    }
+    
+    /// Returns value of calendar component.
+    /// - Parameter compontent: Calendar component.
+    /// - Returns: Compenent in value.
+    ///
+    func getCompontent(_ compontent: Calendar.Component) -> Int {
+        Calendar.current.component(compontent, from: self)
     }
     
     // MARK: - Compare methods
@@ -129,11 +137,6 @@ public extension Date {
     ///
     func isLessDateToGranularityDay(_ date: Date) -> Bool {
         Calendar.current.compare(self, to: date, toGranularity: .day) == .orderedAscending
-    }
-    
-    // TODO: - Comments, Readme
-    func getCompontent(_ compontent: Calendar.Component) -> Int {
-        Calendar.current.component(compontent, from: self)
     }
     
 }
