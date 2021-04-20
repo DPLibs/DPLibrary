@@ -41,4 +41,42 @@ public extension UIView {
         self.superview?.convert(self.frame, to: nil)
     }
     
+    // MARK: - Layouts methods
+    
+    /// Perform `setNeedsLayout()` and `layoutIfNeeded()`.
+    ///
+    func reloadLayouts() {
+        self.setNeedsLayout()
+        self.layoutIfNeeded()
+    }
+    
+    // MARK: - Animate methods
+
+    /// Start rotate.
+    /// - Parameter duration: Duration value.
+    /// - Parameter repeatCount: Repaet value.
+    ///
+    func startRotationAnimation(duration: TimeInterval = 1, repeatCount: Float = .infinity) {
+        let kRotationAnimationKey = "rotation_animation_key"
+        
+        guard self.layer.animation(forKey: kRotationAnimationKey) == nil else { return }
+        
+        let rotationAnimation = CABasicAnimation(keyPath: "transform.rotation")
+        rotationAnimation.fromValue = 0.0
+        rotationAnimation.toValue = Float.pi * 2.0
+        rotationAnimation.duration = duration
+        rotationAnimation.repeatCount = repeatCount
+
+        self.layer.add(rotationAnimation, forKey: kRotationAnimationKey)
+    }
+
+    /// Stop rotate.
+    ///
+    func stopRotationAnimation() {
+        let kRotationAnimationKey = "rotation_animation_key"
+        
+        guard self.layer.animation(forKey: kRotationAnimationKey) != nil else { return }
+        self.layer.removeAnimation(forKey: kRotationAnimationKey)
+    }
+    
 }

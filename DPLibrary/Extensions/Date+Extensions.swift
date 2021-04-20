@@ -2,6 +2,17 @@ import Foundation
 
 public extension Date {
     
+    /// Return now `Date` with `Time` of `Calendar`.
+    /// - Parameter time: Current time.
+    /// - Parameter calendar: Calendar for date.
+    /// - Returns: Date with time of calendar.
+    ///
+    static func now(withTime time: Time = .zero, of calendar: Calendar = .current) -> Date {
+        let now = Date()
+        
+        return calendar.date(bySettingHour: time.hours, minute: time.minutes, second: time.seconds, of: now) ?? now
+    }
+    
     // MARK: - Add methods
     
     /// Return date with adding dateComponent value.
