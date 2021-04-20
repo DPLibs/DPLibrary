@@ -541,18 +541,18 @@
 			isa = PBXGroup;
 			children = (
 				E2BCCC5925E5835600AC4822 /* Angle.swift */,
+				E2A9DAD0262F1D91008B03EC /* AnimationInfo.swift */,
 				E2BCCC5125E5835600AC4822 /* AppServerConfiguration.swift */,
 				E2BF548425DF04F8009B300A /* DateFormatType.swift */,
 				E2BCCC5325E5835600AC4822 /* Distance.swift */,
 				E2BCCC6525E5835600AC4822 /* DPStoredParameter.swift */,
 				E2D370322607A342005F60DF /* Handlers.swift */,
 				E2BCCC5F25E5835600AC4822 /* ImageModel.swift */,
+				E2A9DAD7262F1DC7008B03EC /* KeyboardInfo.swift */,
 				E2BCCC5825E5835600AC4822 /* Time.swift */,
 				E28DD149260A60BB003F9AA0 /* TimeStamp.swift */,
 				E2BCCC5D25E5835600AC4822 /* TimeUnit.swift */,
 				E2BCCC8325E5840100AC4822 /* StyleWrapper */,
-				E2A9DAD0262F1D91008B03EC /* AnimationInfo.swift */,
-				E2A9DAD7262F1DC7008B03EC /* KeyboardInfo.swift */,
 			);
 			name = Classes;
 			path = DPLibrary/Classes;
