@@ -37,6 +37,47 @@ public extension Array {
         self = self.removingAll(at: indices)
     }
     
+    // MARK: - Change elements methods
+    
+    /// Return array with offseting all elements at offset.
+    /// - Parameter offset: Offset value.
+    /// - Returns: New offseting array.
+    ///
+    func offseting(_ offset: Int) -> [Element] {
+        var result = self
+        
+        if result.indices.contains(offset) {
+            result = Array(result[offset...])
+        }
+        
+        return result
+    }
+    
+    /// Retrun new array of elements by offset.
+    /// - Parameter offset: Offset value.
+    ///
+    mutating func offset(_ offset: Int) {
+        self = self.offseting(offset)
+    }
+    
+    /// Return array with limiting all elements at limit.
+    /// - Parameter limit: Limit value.
+    /// - Returns: New limiting array.
+    ///
+    func limiting(_ limit: Int) -> Self {
+        var result = self
+        result = Array(result.prefix(limit))
+        
+        return result
+    }
+    
+    /// Retrun new array of elements by limit.
+    /// - Parameter limit: Limit value.
+    ///
+    mutating func limit(_ limit: Int) {
+        self = self.limiting(limit)
+    }
+    
 }
 
 // MARK: - Array Element is Equatable

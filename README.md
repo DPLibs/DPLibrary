@@ -50,6 +50,7 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 ### Extensions
 
 [**Array**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Array+Extensions.swift)<br/>
+[**Calendar**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Calendar+Extensions.swift)<br/>
 [**Collection**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Collection+Extensions.swift)<br/>
 [**Date**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Date+Extensions.swift)<br/>
 [**Dictionary**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Extensions/Dictionary+Extensions.swift)<br/>
