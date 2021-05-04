@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
-// TODO: - Readme/Comments
+
+/// Struct for for defining basic animation properties.
+///
 public struct AnimationInfo {
     
     public let curve: UIView.AnimationCurve

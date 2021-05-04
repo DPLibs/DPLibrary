@@ -22,13 +22,10 @@ public extension Array {
     /// - Returns: Old array with removing all elements at indices.
     ///
     mutating func removingAll(at indices: [Int]) -> [Element] {
-        let removedElements = indices.map { self[$0] }
-        
-        for index in indices.sorted(by: >) {
-            self.remove(at: index)
-        }
-        
-        return removedElements
+        self
+            .enumerated()
+            .filter({ !indices.contains($0.offset) })
+            .compactMap({ $0.element })
     }
 
     /// Remove all elemants at indices.

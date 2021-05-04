@@ -7,7 +7,9 @@
 
 import Foundation
 import UIKit
-// TODO: - Readme/Comments
+
+/// Struct contains basic information about the appearance / disappearance of the keyboard, which it receives from keyboard notifications.
+///
 public struct KeyboardInfo {
     
     public let animationInfo: AnimationInfo

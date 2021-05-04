@@ -27,12 +27,14 @@ DPLibrary is available under the MIT license. See the LICENSE file for more info
 ### Classes
 
 [**Angle**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Angle.swift) - struct for defining the geometric angle.<br/>
+[**AnimationInfo**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/AnimationInfo.swift) - struct for for defining basic animation properties.<br/>
 [**AppServerConfiguration**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/AppServerConfiguration.swift) - struct for defining the application remote server configuration.<br/>
 [**DateFormatType**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/DateFormatType.swift) - struct for storing preset values for dateFormat in DateFromatter.<br/>
 [**Distance**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Distance.swift) - struct for defining the distance.<br/>
 [**DPStoredParameter**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/DPStoredParameter.swift) - struct for defining the stored parameter with generic type `ParameterType`. <br/>
 [**Handlers**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Handlers.swift) - class for creating and managing a list of closures.<br/>
 [**ImageModel**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/ImageModel.swift) - struct for defining the image.<br/>
+[**KeyboardInfo**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/KeyboardInfo.swift) -struct contains basic information about the appearance / disappearance of the keyboard, which it receives from keyboard notifications.<br/>
 [**Time**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/Time.swift) - struct for determining the time.<br/>
 [**TimeStamp**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/TimeStamp.swift) - struct for determining the timeStamp.<br/>
 [**TimeUnit**](https://github.com/DPLibs/DPLibrary/blob/develop/DPLibrary/Classes/TimeUnit.swift) - struct for determining the time interval unit.<br/>

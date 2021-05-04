@@ -3,6 +3,19 @@ import UIKit
 
 public extension StyleWrapper where Element: UIView {
     
+    // MARK: - Rect
+    static func frame(_ value: CGRect) -> StyleWrapper {
+        return .wrap { view in
+            view.frame = value
+        }
+    }
+    
+    static func bounds(_ value: CGRect) -> StyleWrapper {
+        return .wrap { view in
+            view.bounds = value
+        }
+    }
+    
     // MARK: - Background color
     static func backgroundColor(_ value: UIColor) -> StyleWrapper {
         return .wrap { view in
@@ -95,7 +108,7 @@ public extension StyleWrapper where Element: UIView {
     }
     
     // MARK: - Shadow
-    static func shadow(color: UIColor, offset: CGSize, opacity: Float, radius: CGFloat) -> StyleWrapper {
+    static func shadowLayer(color: UIColor, offset: CGSize, radius: CGFloat, opacity: Float) -> StyleWrapper {
         return .wrap { view in
             view.layer.masksToBounds = false
             view.layer.shadowColor = color.cgColor
@@ -106,7 +119,7 @@ public extension StyleWrapper where Element: UIView {
         }
     }
     
-    static var shadowClear: StyleWrapper {
+    static var shadowLayerClear: StyleWrapper {
         return .wrap { view in
             view.layer.masksToBounds = false
             view.layer.shadowColor = UIColor.clear.cgColor
@@ -114,6 +127,25 @@ public extension StyleWrapper where Element: UIView {
             view.layer.shadowOffset = .zero
             view.layer.shadowOpacity = .zero
             view.layer.shadowRadius = .zero
+        }
+    }
+    
+    static func shadowView(color: UIColor, offset: CGSize, radius: CGFloat, opacity: Float) -> StyleWrapper {
+        return .wrap { view in
+            view.appendShadowView(
+                viewBounds: view.bounds,
+                viewRadius: view.layer.cornerRadius,
+                shadowColor: color,
+                shadowOffset: offset,
+                shadowRadius: radius,
+                shadowOpacity: opacity
+            )
+        }
+    }
+    
+    static var shadowViewRemove: StyleWrapper {
+        return .wrap { view in
+            view.removeShadowView()
         }
     }
     
