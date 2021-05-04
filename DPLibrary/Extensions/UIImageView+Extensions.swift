@@ -45,8 +45,8 @@ public extension UIImageView {
     /// - Parameter image: ImageModel.
     /// - Parameter completion: Completion closure.
     ///
-    func setupImageFromImageModel(_ image: ImageModel, completion: ((Bool) -> Void)? = nil) {
-        self.setupImageFromRemoteUrl(image.remoteUrl, placeholder: image.placeholder, completion: completion)
+    func setupImageFromImageModel(_ image: ImageModel?, completion: ((Bool) -> Void)? = nil) {
+        self.setupImageFromRemoteUrl(image?.remoteUrl, placeholder: image?.placeholder, completion: completion)
     }
     
 }

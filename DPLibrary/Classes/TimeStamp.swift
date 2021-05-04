@@ -61,6 +61,35 @@ public struct TimeStamp {
         guard let date = dateOptional else { return nil }
         self.init(date: date)
     }
+    
+    // MARK: - Methods
+    
+    /// Adds `time` as an interval of milliseconds.
+    /// - Parameter time: Value of `Time`.
+    ///
+    public func addingDate(_ date: Date?) -> TimeStamp {
+        let interval = (date?.timeIntervalSince1970 ?? 0.0) * 1000
+        
+        return .init(milliseconds: self.milliseconds + interval)
+    }
+    
+    /// Adds `time` as an interval of milliseconds.
+    /// - Parameter time: Value of `Time`.
+    ///
+    public func addingTime(_ time: Time?) -> TimeStamp {
+        let interval = time?.toMillesecondsInterval().toDouble ?? 0.0
+        
+        return .init(milliseconds: self.milliseconds + interval)
+    }
+    
+    /// Adds `timeInit` as milliseconds.
+    /// - Parameter timeUnit: Value of `TimeUnit`.
+    ///
+    public func addingTimeUnit(_ timeUnit: TimeUnit?) -> TimeStamp {
+        let interval = timeUnit?.milliseconds ?? 0.0
+        
+        return .init(milliseconds: self.milliseconds + interval)
+    }
 }
 
 // MARK: - TimeStamp + Codable
@@ -77,7 +106,7 @@ extension TimeStamp: Codable {
     // MARK: - Encodable
     public func encode(to encoder: Encoder) throws {
         var container = encoder.singleValueContainer()
-        try container.encode(self.milliseconds)
+        try container.encode(self.milliseconds.toInt)
     }
     
 }

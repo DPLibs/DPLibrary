@@ -42,6 +42,68 @@ public struct Time {
         self.milliseconds = milliseconds
     }
     
+    /// Initialize  by millesecondsInterval.
+    /// - Parameter millesecondsInterval - Interval of milliseconds.
+    ///
+    public init(millesecondsInterval: Int) {
+        let hours = millesecondsInterval / 1000 / 60 / 60
+        let minutes = millesecondsInterval / 1000 / 60 % 60
+        let seconds = millesecondsInterval / 1000 % 60
+        let milliseconds = millesecondsInterval % 1000
+        
+        self.init(hours: hours, minutes: minutes, seconds: seconds, milliseconds: milliseconds)
+    }
+    
+    /// Initialize  by secondsInterval.
+    /// - Parameter secondsInterval - Interval of seconds.
+    ///
+    public init(secondsInterval: Int) {
+        self.init(millesecondsInterval: secondsInterval * 1000)
+    }
+    
+    /// Initialize  by minutesInterval.
+    /// - Parameter minutesInterval - Interval of minutes.
+    ///
+    public init(minutesInterval: Int) {
+        self.init(millesecondsInterval: minutesInterval * 1000 * 60)
+    }
+    
+    /// Initialize  by hoursInterval.
+    /// - Parameter hoursInterval - Interval of hours.
+    ///
+    public init(hoursInterval: Int) {
+        self.init(millesecondsInterval: hoursInterval * 1000 * 60 * 60)
+    }
+    
+    // MARK: - Methods
+    
+    /// Returns time value in interval of milliseconds.
+    ///
+    public func toMillesecondsInterval() -> Int {
+        (self.hours * 1000 * 60 * 60) +
+        (self.minutes * 1000 * 60) +
+        (self.minutes * 1000) +
+        self.milliseconds
+    }
+    
+    /// Returns time value in interval of milliseconds.
+    ///
+    public func toSecondsInterval() -> Int {
+        self.toMillesecondsInterval() / 1000
+    }
+    
+    /// Returns time value in interval of milliseconds.
+    ///
+    public func toMinutesInterval() -> Int {
+        self.toMillesecondsInterval() / 1000 / 60
+    }
+    
+    /// Returns time value in interval of milliseconds.
+    ///
+    public func toHoursInterval() -> Int {
+        self.toMillesecondsInterval() / 1000 / 60 / 60
+    }
+    
 }
 
 // MARK: - Time + Equatable
