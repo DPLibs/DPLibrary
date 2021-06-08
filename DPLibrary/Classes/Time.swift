@@ -82,7 +82,7 @@ public struct Time {
     public func toMillesecondsInterval() -> Int {
         (self.hours * 1000 * 60 * 60) +
         (self.minutes * 1000 * 60) +
-        (self.minutes * 1000) +
+        (self.seconds * 1000) +
         self.milliseconds
     }
     
