@@ -5,6 +5,9 @@
 [![License](https://img.shields.io/cocoapods/l/DPLibrary.svg?style=flat)](https://cocoapods.org/pods/DPLibrary)
 [![Platform](https://img.shields.io/cocoapods/p/DPLibrary.svg?style=flat)](https://cocoapods.org/pods/DPLibrary)
 
+## Library deprecated
+Use [DPSwift](https://github.com/DPLibs/DPSwift.git), [DPUIKit](https://github.com/DPLibs/DPUIKit.git)
+
 ## Installation
 
 DPLibrary is available through [CocoaPods](https://cocoapods.org). To install
